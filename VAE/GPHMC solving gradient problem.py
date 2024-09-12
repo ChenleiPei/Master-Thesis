@@ -60,16 +60,16 @@ class EnergyFunction(torch.nn.Module):
         self.model.eval()
         self.likelihood.eval()
 
-        # 这里启用梯度计算
+        # energy calculation
         with torch.enable_grad():
-            # 获得预测的后验分布
+            
             predictive_distribution = self.likelihood(self.model(x))
 
-            # 计算均值和标准差
+            
             mean = predictive_distribution.mean
             std = predictive_distribution.stddev
 
-            # 定义能量方程
+            # defined as in the paper
             energy = mean - std
 
         return energy
