@@ -48,11 +48,13 @@ def process_equations(file_path):
     return alphabet_size, padded_inputs, padded_targets, sequence_lengths, vocab
 
 # Use the function to process equations from a file and generate targets
-#file_path = 'equations.txt'  # Replace with the actual file path
+#file_path = 'equations_100.txt'  # Replace with the actual file path
 #alphabet_size, input_sequences, target_sequences, lengths, vocab = process_equations(file_path)
 
 
 #print("Alphabet size:", alphabet_size)
 #print("Input sequences:", input_sequences)
+#print("vocab:", vocab)
+#print("max_length:", max(lengths))
 #print("Target sequences:", target_sequences)
 #print("Lengths of each sequence before padding:", lengths)
