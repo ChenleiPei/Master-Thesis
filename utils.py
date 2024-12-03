@@ -79,59 +79,85 @@ def expierment_name(args, ts):
 
 import re
 import sympy as sp
-from sympy import cos, exp, symbols
-from functools import wraps
+from sympy import symbols
 
-def convert_and_evaluate_expression(expression_str, x_value=None):
+def convert_expression(expression_str):
     """
-    将字符串形式的数学表达式转换为可以被 SymPy 识别和计算的表达式。
-
-    参数：
-    - expression_str (str): 字符串形式的数学表达式。
-    - x_value (float, optional): 用于替换符号 x 的值。
-
-    返回：
-    - sympy_expr (sympy.Expr): 转换后的 SymPy 表达式。
-    - evaluated_value (float, optional): 如果提供了 x 的值，则返回计算结果。
+    convert_expression function will convert a string expression to a SymPy expression.
     """
+    # 去除起始标记符 "<start>" 并整理空格
     expression = expression_str.replace("<start>", "").strip()
-
     expression = re.sub(r'(?<=\S)([\+\-\*/()])', r' \1 ', expression)  # 在符号前添加空格
     expression = re.sub(r'([\+\-\*/()])(?=\S)', r' \1 ', expression)  # 在符号后添加空格
     expression = re.sub(r'\s+', ' ', expression).strip()  # 去除多余空格
-
-    expression = expression_str.replace("<start>", "").strip()
-    #/ as devide
-    #expression = re.sub(r'/', ' / ', expression)
-    #* as multiply
-    #expression = re.sub(r'\*', ' * ', expression)
-    #( as (
-    #expression = re.sub(r'\(', ' ( ', expression)
-    #) as )
-    #expression = re.sub(r'\)', ' ) ', expression)
     expression = re.sub(r'\bcos\b', 'cos', expression)
     expression = re.sub(r'\bexp\b', 'exp', expression)
 
-
-    x = symbols('x')
-
-
     try:
+        # let sympy parse the expression
         sympy_expr = sp.parse_expr(expression)
-        print(f"SymPy Expression: {sympy_expr}")
-
-
-        evaluated_value = None
-        if x_value is not None:
-            evaluated_value = sympy_expr.subs(x, x_value).evalf()
-            print(f"Evaluated value (x={x_value}): {evaluated_value}")
-
-        return convert_and_evaluate_expression, (sympy_expr, evaluated_value)
-
+        print(f"Converted SymPy Expression: {sympy_expr}")
+        return sympy_expr
     except sp.SympifyError:
         print("Error: The expression could not be parsed.")
-        return convert_and_evaluate_expression, (None, None)
+        return None
 
-# 示例使用
-expression = "<start> 3 / cos ( 3 / x * 3 ) / exp ( 2 * 1 * 2 / 3 ) / 1 + 3"
-convert_and_evaluate_expression(expression, x_value=2)
+
+import numpy as np
+from sympy import symbols, sympify
+
+def evaluate_expression(sympy_expr, x_range=None):
+    """
+    Evaluate a SymPy expression for a given range of x values or a single x value.
+    """
+    x = symbols('x')
+
+    if sympy_expr is None:
+        print("Error: Invalid SymPy expression.")
+        return None
+
+    try:
+        # If x_range is a tuple (start, stop, step)
+        if isinstance(x_range, (list, tuple)) and len(x_range) == 3:
+            start, stop, step = x_range
+            x_values = np.arange(start, stop, step)  # Use NumPy to create range
+            results = [sympy_expr.subs(x, value).evalf() for value in x_values]
+            print(f"Evaluated values for range {x_range}: {results}")
+            return results
+
+        # If x_range is a single number
+        elif isinstance(x_range, (int, float)):
+            result = sympy_expr.subs(x, x_range).evalf()
+            print(f"Evaluated value (x={x_range}): {result}")
+            return result
+
+        else:
+            print("Error: Invalid x_range input. It must be a number or a tuple (start, stop, step).")
+            return None
+
+    except Exception as e:
+        print(f"Error during evaluation: {e}")
+        return None
+
+
+# Example usage
+#let the evaluate be false
+
+def convert_expression2(expression_str):
+    """
+    Converts a string expression into a SymPy expression, removing unwanted tokens like "<start>".
+    """
+    # Remove "<start>" if it exists
+    cleaned_expression = expression_str.replace("<start>", "").strip()
+    try:
+        sympy_expr = sympify(cleaned_expression, evaluate=False)
+        print(f"Converted SymPy Expression: {sympy_expr}")
+        return sympy_expr
+    except Exception as e:
+        print(f"Error converting expression: {e}")
+        return None
+
+
+#expression_str = "<start> x*x + 2*x + 1/1"
+#sympy_expr = convert_expression2(expression_str)
+#evaluate_expression(sympy_expr, x_range=(0, 10, 1))

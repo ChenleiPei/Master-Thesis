@@ -8,7 +8,7 @@ class LSTMEncoder(nn.Module):
         super(LSTMEncoder, self).__init__()
         # embedding to convert input index to embedding vector
         self.embedding = nn.Embedding(vocab_size, embedding_size)
-        # LSTM 层，接收嵌入向量作为输入
+        # LSTM layer
         self.lstm = nn.LSTM(embedding_size, hidden_size, batch_first=True)
 
     def forward(self, x, sequence_lengths):
@@ -27,72 +27,85 @@ class LSTMEncoder(nn.Module):
         return hidden, cell
 
 
-
 class LSTMDecoder(nn.Module):
-    def __init__(self, vocab_size, embedding_size, hidden_size):
+    def __init__(self, vocab_size, embedding_size, hidden_size, max_length):
         super(LSTMDecoder, self).__init__()
-        # embedding
+        # Embedding layer
         self.embedding = nn.Embedding(vocab_size, embedding_size)
-        # LSTM
+        # LSTM layer
         self.lstm = nn.LSTM(embedding_size, hidden_size, batch_first=True)
-        # linear layer to map output to vocab size
+        # Linear layer to map LSTM output to vocabulary size
         self.fc = nn.Linear(hidden_size, vocab_size)
+        self.max_length = max_length
 
-    def forward(self, x, hidden, cell, sequence_lengths):
-        print(x.shape)
-        embedded = self.embedding(x)
-        print(embedded.shape)
-        outputs, _ = self.lstm(embedded, (hidden, cell))
-        print("OUTPUTS1", outputs.shape)
-        outputs = self.fc(outputs)
+    def forward(self, hidden, cell, max_length, start_token_idx):
+        batch_size = hidden.size(1)  # Get batch size from hidden state
 
+        # Start with the <start> token for each sequence in the batch
+        input_token = torch.full((batch_size, 1), start_token_idx, dtype=torch.long)  # [batch_size, 1]
+
+        outputs = []
+
+        for _ in range(max_length):
+            embedded = self.embedding(input_token)  # [batch_size, 1, embedding_size]
+            lstm_out, (hidden, cell) = self.lstm(embedded, (hidden, cell))  # [batch_size, 1, hidden_size]
+            logits = self.fc(lstm_out)  # [batch_size, 1, vocab_size]
+            outputs.append(logits)
+
+            # Choose the token with the highest probability
+            _, next_token = torch.max(logits, dim=-1)
+            input_token = next_token  # Use the current output as the next input
+
+        # Concatenate all outputs to get the final sequence: [batch_size, max_length, vocab_size]
+        outputs = torch.cat(outputs, dim=1)
         return outputs
 
 
-
 class LSTMAutoencoder(nn.Module):
-    def __init__(self, vocab_size, embedding_size, hidden_size, vocab):
+    def __init__(self, vocab_size, embedding_size, hidden_size, vocab, max_length):
         super(LSTMAutoencoder, self).__init__()
-        # 初始化编码器和解码器
+
         self.encoder = LSTMEncoder(vocab_size, embedding_size, hidden_size)
+        self.decoder = LSTMDecoder(vocab_size, embedding_size, hidden_size, max_length)
         self.vocab = vocab
-        self.decoder = LSTMDecoder(vocab_size, embedding_size, hidden_size)
-        self.embedding = nn.Embedding(vocab_size, embedding_size)  # 用于解码时映射回词汇索引
-        self.vocab = vocab
-        self.index_to_token = {index: token for token, index in vocab.items()}  # 索引到符号的映射
+        self.index_to_token = {index: token for token, index in vocab.items()}  # Index-to-token mapping
+        self.token_to_index = vocab  # Token-to-index mapping
+        self.max_length = max_length
 
     def forward(self, x, sequence_lengths):
-        # 编码阶段
+        # Encode the input sequence
         hidden, cell = self.encoder(x, sequence_lengths)
-        # 解码阶段，使用编码阶段的隐藏状态和单元状态
-        #print state of x
-        print("X", x.shape)
-        decoded = self.decoder(x, hidden, cell, sequence_lengths)
+
+        # Use <start> token to initialize the decoding process
+        start_token_idx = self.token_to_index['<start>']
+
+        # Decode using the hidden state and cell state from the encoder
+        decoded = self.decoder(hidden, cell, max_length=self.max_length, start_token_idx=start_token_idx)
+
         return decoded
+
 
     def reconstruct_expression(self, sequence, from_indices=True):
         """
-        从解码器生成的嵌入向量序列中重建出原始的数学表达式，
-        或者从词汇表索引序列重建原始输入表达式。
 
         Args:
-            sequence (torch.Tensor): 输入序列或解码器的输出序列，可以是嵌入向量或者索引。
-            from_indices (bool): 如果为 True，直接将输入视为词汇表索引，否则将输入视为嵌入序列。
+            sequence (torch.Tensor): input sequence
+            from_indices (bool): if True, the input sequence is a sequence of indices, otherwise it is a sequence of
 
         Returns:
-            list: 重建后的表达式字符串列表。
+            list: expression list
         """
         if not from_indices:
-            # 如果输入不是索引序列，将嵌入向量序列转换为索引
+            # we need to convert the input sequence to indices
             _, predicted_indices = torch.max(sequence, dim=-1)  # [batch_size, seq_length]
         else:
             predicted_indices = sequence  # [batch_size, seq_length]
 
-        # 将索引转换为词汇表中的符号
+        # to store the expressions
         expressions = []
         for sequence in predicted_indices:
             expression = [self.index_to_token[idx.item()] for idx in sequence]
-            # 去掉 <pad> 和 <end> 标记，重建原始表达式
+
             expression = [token for token in expression if token not in ['<pad>', '<end>']]
             expressions.append(" ".join(expression))
         return expressions

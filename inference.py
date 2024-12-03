@@ -9,7 +9,7 @@ from readeq import process_equations
 
 def main(args):
     # read equations from file
-    alphabet_size, padded_inputs, padded_targets, sequence_lengths, vocab = process_equations(args.data_dir + '/equations.txt')
+    alphabet_size, padded_inputs, padded_targets, sequence_lengths, vocab = process_equations(args.data_dir + '/equations_100.txt')
     w2i, i2w = vocab, {idx: token for token, idx in vocab.items()}
     #print the vocab and w2i, i2w
     print("w2i:", w2i)
@@ -49,7 +49,7 @@ def main(args):
     # process inference output
     def process_inference_output(output):
         samples, z = output
-        samples = samples.squeeze(-1)  # 调整 samples 维度
+        samples = samples.squeeze(-1)  # remove the last dimension
         return samples, z
 
     # generate samples

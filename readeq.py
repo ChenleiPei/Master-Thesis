@@ -2,6 +2,7 @@ import re
 
 def read_equations(file_path):
     """Read equations from a file, each line an equation"""
+    print("file_path:", file_path)
     with open(file_path, 'r') as file:
         equations = [line.strip() for line in file if line.strip()]
     return equations

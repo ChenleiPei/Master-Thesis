@@ -103,8 +103,8 @@ class SentenceVAE(nn.Module):
 
         b, s, _ = padded_outputs.size()
         logp = nn.functional.log_softmax(self.outputs2vocab(padded_outputs.view(-1, padded_outputs.size(2))), dim=-1)
-        print('shape of logp:', logp.shape)
-        print("Original padded_outputs shape:", padded_outputs.shape)
+        #print('shape of logp:', logp.shape)
+        #print("Original padded_outputs shape:", padded_outputs.shape)
         logp = logp.view(b, s, self.vocab_size)
 
         return logp, mean, logv, z
@@ -168,13 +168,16 @@ class SentenceVAE(nn.Module):
         if mode == 'greedy':
             _, sample = torch.topk(logits, 1, dim=-1)  # max value's index
         sample = sample.squeeze(-1)
+
         return sample
 
     def _save_sample(self, save_to, sample, running_seqs, t):
+
         running_latest = save_to[running_seqs]  # get the running sequences
         sample = sample.squeeze(-1)  # make sure sample is [batch_size]
         running_latest[:, t] = sample  # update the running sequences
         save_to[running_seqs] = running_latest  # save the running sequences
+
         return save_to
 
 
