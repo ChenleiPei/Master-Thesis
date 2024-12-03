@@ -32,9 +32,9 @@ def calculate_log_likelihood_from_gaussian(points_file, target_func, noise=0.01)
 
     # Calculate the log likelihood of each point using Gaussian distribution
     log_likelihoods = norm.logpdf(y_observed, loc=y_mean, scale=noise)
-    joint_log_likelihood = np.sum(log_likelihoods)  # Sum of log-likelihoods
+    joint_log_likelihood = (np.sum(log_likelihoods) / 1000) # Sum of log-likelihoods
 
-    return joint_log_likelihood
+    return  joint_log_likelihood
 
 
 # Example usage:
