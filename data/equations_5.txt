@@ -1,0 +1,4430 @@
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * sin ( x )
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 * 2 * x + 2
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+2 + cos ( sin ( x * x ) )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+exp ( 3 / exp ( 2 + x / 2 ) + x )
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+1 + x * 2
+
+
+
+
+
+
+
+
+

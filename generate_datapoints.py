@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def generate_and_save_gaussian_points(target_func, x_range, n_points=50, noise=0.01, filename="data_points.npy"):
+def generate_and_save_gaussian_points(target_func, x_range, n_points=10, noise=0.01, filename="data_points.npy"):
     """
     Generate random points around a target function with independent Gaussian noise and save them.
 
@@ -46,11 +46,11 @@ def generate_and_save_gaussian_points(target_func, x_range, n_points=50, noise=0
 if __name__ == "__main__":
     # Define the target function as a Python function
     def target_function(x):
-        return (2 + (1 + 2) / np.cos(np.cos(x)))  # Example: sin(x)
+        return (4*x + 2)  # Example: sin(x)
 
 
     # Generate and save Gaussian points around the target function
     x_range = (0.1, 10)
     n_points = 10
     filename = "datapoints.npy"
-    generate_and_save_gaussian_points(target_function, x_range, n_points=n_points, noise=0.1, filename=filename)
+    generate_and_save_gaussian_points(target_function, x_range, n_points=n_points, noise=1, filename=filename)

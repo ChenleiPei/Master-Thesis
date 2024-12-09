@@ -41,7 +41,7 @@ def loss_function(recon_x, x, mu, log_var, vocab_size, beta):
     kld_loss = -0.5 * torch.sum(1 + log_var - mu.pow(2) - log_var.exp())
 
     # Total loss with beta annealing
-    total_loss = recon_loss + 3*beta * kld_loss
+    total_loss = recon_loss + 0.3*beta * kld_loss
 
     return total_loss, kld_loss, recon_loss
 
@@ -248,7 +248,7 @@ def train_vae(model, train_loader, validation_loader, test_loader, epochs, lr, v
                 all_latent_vectors.append(latent_representation)
                 all_original_expressions.append(original_expression)
 
-            # 计算损失
+
             loss_test = loss_function(logits, targets, mu, log_var, vocab_size, beta)
             test_loss += loss_test[0].item()
             kl_loss += loss_test[1].item()
@@ -280,13 +280,13 @@ def main():
     ts = time.strftime('%Y-%b-%d-%H-%M-%S', time.gmtime())
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data_file', type=str, default='equations_3.txt',
+    parser.add_argument('--data_file', type=str, default='equations_10.txt',
                         help='File containing mathematical expressions')
     parser.add_argument('--embedding_size', type=int, default=32, help="Size of embedding layer")
     parser.add_argument('--hidden_size', type=int, default=128, help="Size of hidden LSTM layer")
     parser.add_argument('--latent_size', type=int, default=2, help="Size of latent space")
     parser.add_argument('--batch_size', type=int, default=256, help="Batch size for training")
-    parser.add_argument('--epochs', type=int, default=200, help="Number of training epochs")
+    parser.add_argument('--epochs', type=int, default=150, help="Number of training epochs")
     parser.add_argument('--learning_rate', type=float, default=0.0005, help="Learning rate for optimizer")
     parser.add_argument('--save_model_path', type=str, default='LSTMVAE_bin')
     #addd number of layers
@@ -305,7 +305,7 @@ def main():
     os.makedirs(save_model_path, exist_ok=True)
 
     # Initialize WandB
-    wandb.init(project="LSTM_VAE_eq10000_3_2_Dlatent_space",
+    wandb.init(project="LSTM_VAE_eq_10_2_Dlatent_space",
                name=folder_name,
                config=args)
 

@@ -51,7 +51,7 @@ def train_gp_model(train_x, train_y, args):
     # Initialize model
     model = GPModel(train_x, train_y, likelihood, lengthscale, outputscale, noise)
 
-    # Use evaluation mode
+    # Use evaluation mod
     model.eval()
     likelihood.eval()
 
@@ -126,7 +126,7 @@ def score_func_VAE(z, model, max_length, num_layers):
         # Calculate the likelihood of the math expression
         target_func = math_expression
         points_file = "datapoints.npy"
-        likelihood = calculate_log_likelihood_from_gaussian(points_file, target_func, noise=0.01)
+        likelihood = calculate_log_likelihood_from_gaussian(points_file, target_func, std=args.std_likelihood)
         print(f"Likelihood: {likelihood}")
 
         '''# Check if the generated expression is meaningful (e.g., valid mathematical expression)
@@ -134,14 +134,12 @@ def score_func_VAE(z, model, max_length, num_layers):
             print(f"Skipping invalid expression: {expression}")
             return None  # Skip this iteration if the expression is not meaningful'''
 
-
-
     except Exception as e:
         print(f"Error converting expression {expression}: {e}")
         return None  # Skip this iteration if there's an error in expression conversion
 
 
-    return likelihood
+    return likelihood, math_expression
 
 
 def hmc_sample(initial_position, energy_function, steps, step_size, num_samples, bounds):
@@ -206,195 +204,187 @@ def hmc_sample(initial_position, energy_function, steps, step_size, num_samples,
 
 
 def main():
-    #exploration phase
-    # should initial_position be the end position?
-    #initial_position = torch.full((1, dimension), 0.5, dtype=torch.float32)
+    # exploration phase
     dimension = args.dimension
     lengthscale = args.lengthscale
     outputscale = args.outputscale
-    noise = args.noise
-    mean = args.mean
-    std_dev = args.std_dev
+    std = args.std_likelihood
     steps = args.steps
     step_size = torch.full((dimension,), args.step_size, dtype=torch.float32)
     num_samples = args.num_samples
     bounds = tuple(args.bounds)
-    upper_bound = args.upper_bound
     iterations = args.iterations
-    number_of_test_points = args.number_of_test_points
-    iterations_sampling = args.iterations_sampling
 
-    #initial_position = torch.tensor([[0.0, 0]], dtype=torch.float32)
     initial_position = torch.tensor(args.initial_position, dtype=torch.float32)
+
     accumulated_samples = initial_position.clone()
-
-    #model, likelihood = None, None
-    Z_score = score_func_VAE(accumulated_samples, VAEmodel, max_length, num_layers)
-    print("Z_score", Z_score)
-    #change Z_score to a tensor
-    Z_score = torch.tensor(Z_score, dtype=torch.float32)
-    Z_score = torch.tensor(Z_score).view(1)
-    model, likelihood = train_gp_model(accumulated_samples, Z_score, args)
-
     trained_iterations = []
+    accumulated_samples_list = []  # for saving the accumulated samples
+    math_expressions_list = []
+    model, likelihood = None, None
+    #dimension = args.dimension
+    Z_score = torch.empty((1), dtype=torch.float32)
+    #print the shape of Z_score
+    print("shape of Z_score", Z_score.shape)
+
+    # Initial model and likelihood creation
+    result_first = score_func_VAE(accumulated_samples, VAEmodel, max_length, num_layers)
+
+    if result_first is not None:
+        Z_score, expression = result_first
+        Z_score = torch.tensor(Z_score, dtype=torch.float32).view(1)
+
+        model, likelihood = train_gp_model(accumulated_samples, Z_score, args)
+        accumulated_samples_list.append(initial_position.tolist()[0])  # 保存样本，确保是 1x2 的格式
+        math_expressions_list.append(expression)
+
+    # for saving the math expressions
 
     for i in range(iterations):
-
         if model is None:
             energy_function = lambda x: torch.tensor(0.0, dtype=x.dtype, device=x.device, requires_grad=True)
         else:
             energy_function = EnergyFunction(model, likelihood)
 
-        # print("energy_function", energy_function)
-
         new_samples = hmc_sample(accumulated_samples[-1:], energy_function, steps, step_size, num_samples,
                                  bounds=bounds)  # use the last accepted sample as the initial position
-        # print("new_samples", new_samples)
         new_samples = new_samples.view(initial_position.shape)
-        print("new_samples", new_samples)
 
-        Z_score_new = score_func_VAE(new_samples, VAEmodel, max_length, num_layers)
-        print("Z_score_new", Z_score_new)
-        print("Z_score", Z_score)
+        result = score_func_VAE(new_samples, VAEmodel, max_length, num_layers)
 
-        if Z_score_new is not None:
-            Z_score_new = torch.tensor(Z_score_new, dtype=torch.float32)
-            Z_score_new = torch.tensor(Z_score_new).view(1)
+        if result is not None:
+            Z_score_new, expression = result
+            Z_score_new = torch.tensor(Z_score_new, dtype=torch.float32).view(1)
+            print("shape of Z_score_new", Z_score_new.shape)
             Z_score = torch.cat([Z_score, Z_score_new], 0)
 
-            accumulated_samples = torch.cat([accumulated_samples, new_samples],
-                                            0)  # Concatenate along the first dimension
+            # Ensure new_samples has shape (1, dimension) and convert it to a list
+            new_samples = new_samples.view(1, -1)  # Ensure it has two elements per point (e.g., [x, y])
+            accumulated_samples = torch.cat([accumulated_samples, new_samples], 0)
+
+            accumulated_samples_list.append(new_samples.tolist()[0])  # 保存样本，确保是 1x2 的格式
+            math_expressions_list.append(expression)  # 保存数学表达式
 
 
-        # print("new_samples", new_samples)
-        # print("accumulated_samples", accumulated_samples)
-
-        print("accumulated_samples", accumulated_samples)
-        #Z_score = score_func_VAE(accumulated_samples, VAEmodel, max_length, num_layers)
-        print("Z_score", Z_score)
-        print("interation", i)
-
-        # Train the GP model with the accumulated samples
-        if Z_score_new is not None:
+            # Train the GP model with the accumulated samples if new samples were added
             model, likelihood = train_gp_model(accumulated_samples, Z_score, args)
-            #calculate the number of iteratiosn whiches the model is trained
 
             trained_iterations.append(i)
 
+        print("accumulated_samples", accumulated_samples)
+        print("Z_score", Z_score)
+        print("iteration", i)
         print("trained_iterations", trained_iterations)
 
-    print("accumulated_samples", accumulated_samples)
-    print("Z_score", Z_score)
+    # save the accumulated samples and math expressions as JSON files
+    with open('accumulated_samples.json', 'w') as f:
+        json.dump(accumulated_samples_list, f, indent=4)
 
-    model, likelihood = model, likelihood
-    #save the model
-    #torch.save(model, "GPmodel.pth")
+    # save the math expressions as a JSON file
+    math_expressions_list_str = [str(expr) for expr in math_expressions_list]
 
-    # visualize the GP model
+    with open('math_expressions.json', 'w') as f:
+        json.dump(math_expressions_list_str, f, indent=4)
 
-
-    '''# test case
-    model.eval()
-    likelihood.eval()
-
-    # this test case is to test if the Gaussian Process model can predict the mean and variance of the test points
-    test_points = torch.rand(number_of_test_points, dimension) * upper_bound
-    print("test_points", test_points)
-
-    # predict the mean and variance of the test points
-    with torch.no_grad(), gpytorch.settings.fast_pred_var():
-        pred = model(test_points)
-
-    # get the mean and standard deviation of the prediction
-    pred_mean = pred.mean
-    # pred_std = pred.stddev
-
-    print("Predicted Mean:\n", pred_mean)
-    # print("Predicted Stddev:\n", pred_std)
-
-    real_score = score_func_VAE(test_points, VAEmodel, max_length, num_layers)
-    print("Real Score:\n", real_score)
-
-    # Calculate the RMSE
-    diff = pred_mean - real_score
-    squared_diff = diff ** 2
-    mean_squared_diff = squared_diff.mean()
-    rmse = torch.sqrt(mean_squared_diff)
-    print("RMSE:\n", rmse)'''
-
-    # sampling phase
-
-    '''initial_position_sphase = torch.full((1, dimension), 0, dtype=torch.float32)  # Ensure this is a 2D tensor from start
-    sphase_samples = initial_position_sphase.clone()
-
-    for i in range(iterations_sampling):
-
-        if model is None:
-            energy_function = lambda x: torch.tensor(0.0, dtype=x.dtype, device=x.device, requires_grad=True)
-        else:
-            energy_function = EnergyFunction_sample(model, likelihood)
-
-        # print("energy_function", energy_function)
-
-        new_samples = hmc_sample(sphase_samples[-1:], energy_function, steps, step_size, num_samples,
-                                 bounds=bounds)  # use the last accepted sample as the initial position
-        # print("new_samples", new_samples)
-        # new_samples = new_samples.view(-1, 1)  # Ensure new_samples is a 2D tensor, matching accumulated_samples
-        new_samples = new_samples.view(initial_position.shape)
-        # print("new_samples", new_samples)
-        # print("accumulated_samples", accumulated_samples)
-        sphase_samples = torch.cat([sphase_samples, new_samples], 0)  # Concatenate along the first dimension
-
-        #Z_score_sphase = score_func(sphase_samples)
-        print("interation_sampling", i)
-
-    # Calculate the mean and standard deviation of the samples
-    mean_dims = torch.mean(sphase_samples, dim=0)
-    std_dev_dims = torch.std(sphase_samples, dim=0)
-
-    print("sphase_samples", sphase_samples)
-    print("Mean of each dimension:", mean_dims)
-    print("Standard deviation of each dimension:", std_dev_dims)
-    #print("Z_score_sphase", Z_score_sphase)'''
+    # Visualization
+    visualize_gp_model(model, accumulated_samples_list, math_expressions_list_str)
 
     return model
 
 
+# 修改 visualize_gp_model 函数中的绘制部分
+def visualize_gp_model(model, accumulated_samples_list, math_expressions_list):
+    # 创建较小网格数据进行预测，减少内存需求
+    x = np.linspace(-5, 15, 20)
+    y = np.linspace(-5, 15, 20)
+    X, Y = np.meshgrid(x, y)
+
+    # 将网格数据展平并转化为 PyTorch 张量，确保其形状为 (M, 2)
+    inputs = np.vstack([X.flatten(), Y.flatten()]).T
+    inputs_tensor = torch.tensor(inputs, dtype=torch.float32)
+
+
+    batch_size = 50
+    mean_list = []
+
+    with torch.no_grad(), gpytorch.settings.fast_pred_var():
+        for i in range(0, len(inputs_tensor), batch_size):
+            batch_inputs = inputs_tensor[i:i + batch_size]
+            pred = model(batch_inputs)
+            mean_list.append(pred.mean.numpy())
+
+
+    mean = np.concatenate(mean_list)
+
+
+    Z = mean.reshape(X.shape)
+
+    import matplotlib.cm as cm
+
+    unique_expressions = list(set(math_expressions_list))
+    colors = cm.get_cmap('tab10')
+
+    expression_to_color = {exp: colors(i / len(unique_expressions)) for i, exp in enumerate(unique_expressions)}
+
+    fig = plt.figure(figsize=(10, 7))
+    ax = fig.add_subplot(111, projection='3d')
+
+    ax.plot_surface(X, Y, Z, cmap='viridis', alpha=0.7)
+
+    for sample, expression in zip(accumulated_samples_list, math_expressions_list):
+        point = np.array(sample)
+        if len(point) >= 2:
+            #let z be the lowest position
+            z_bottom = Z.min()
+            ax.scatter(point[0], point[1], z_bottom, color=expression_to_color[expression], s=20, alpha=0.8)
+
+
+    handles = [plt.Line2D([0], [0], marker='o', color='w', markerfacecolor=expression_to_color[exp], markersize=10)
+               for exp in unique_expressions]
+    ax.legend(handles, unique_expressions, loc='upper right', bbox_to_anchor=(1.3, 1))
+
+
+    ax.set_xlabel('X')
+    ax.set_ylabel('Y')
+    ax.set_zlabel('Mean Prediction')
+
+    ax.set_title('3D Visualization of GP Model Mean Predictions with Accumulated Samples')
+
+    plt.show()
+
+
 if __name__ == "__main__":
-    #define the model with args
+    # define the model with args
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model", type=str, default="LSTMVAE_bin/2024-Nov-27-17-50-32/model_final.pth")
+    parser.add_argument("--model", type=str, default="LSTMVAE_bin/2024-Dec-04-19-08-42/model_final.pth")
     parser.add_argument('--vocab_path', type=str, help='Path to the vocab JSON file',
-                        default='./LSTMVAE_bin/2024-Nov-27-17-50-32/vocab.json')
+                        default='./LSTMVAE_bin/2024-Dec-04-19-08-42/vocab.json')
     parser.add_argument("--max_length", type=int, default=37)
     parser.add_argument("--num_layers", type=int, default=2)
     parser.add_argument("--dimension", type=int, default=2)
     parser.add_argument("--lengthscale", type=float, default=2)
     parser.add_argument("--outputscale", type=float, default=1.0)
+    parser.add_argument("--std_likelihood", type=float, default=1)
     parser.add_argument("--noise", type=float, default=0.01)
     parser.add_argument("--mean", type=float, default=10)
     parser.add_argument("--std_dev", type=float, default=1.5)
-    parser.add_argument("--steps", type=int, default=30)
-    parser.add_argument("--step_size", type=float, default=0.1)
+    parser.add_argument("--steps", type=int, default=10)
+    parser.add_argument("--step_size", type=float, default=0.015)
     parser.add_argument("--num_samples", type=int, default=1)
-    parser.add_argument("--bounds", type=list, default=[-3, 6])
+    parser.add_argument("--bounds", type=list, default=[-3, 15])
     parser.add_argument("--upper_bound", type=int, default=5)
-    parser.add_argument("--iterations", type=int, default=50)
+    parser.add_argument("--iterations", type=int, default=800)
     parser.add_argument("--number_of_test_points", type=int, default=50)
     parser.add_argument("--iterations_sampling", type=int, default=200)
-    #define the initial position, with the defined dimension, with torch tensor and float32
     parser.add_argument("--initial_position", type=float, default=[[0, 0]])
 
-
     args = parser.parse_args()
-
     max_length = args.max_length
     num_layers = args.num_layers
     VAEmodel = torch.load(args.model)
 
-
     model = main()
 
-    #save the model
-    #torch.save(model, "GPmodel.pth")
+    # save the model
     torch.save(model.state_dict(), "GPmodel_state_dict.pth")
+
