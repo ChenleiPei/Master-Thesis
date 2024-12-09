@@ -166,7 +166,7 @@ class LSTMVAE(nn.Module):
         # to store the expressions
         expressions = []
         for sequence in predicted_indices:
-            #print("sequence:",sequence)
+            print("sequence:",sequence)
             expression = [self.index_to_token[idx.item()] for idx in sequence]
             expression = [token for token in expression if token not in ['<pad>', '<end>']]
             expressions.append(" ".join(expression))

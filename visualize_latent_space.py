@@ -50,7 +50,7 @@ def visualize_latent_space_2d(npz_file):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Visualize 2D latent space from an .npz file')
-    parser.add_argument('--npz_file', type=str, help='Path to the .npz file containing latent vectors and original expressions', default='LSTMVAE_bin/2024-Dec-04-20-23-51/latent_vectors_and_expressions.npz')
+    parser.add_argument('--npz_file', type=str, help='Path to the .npz file containing latent vectors and original expressions', default='LSTMVAE_bin/2024-Dec-04-19-08-42/latent_vectors_and_expressions.npz')
     args = parser.parse_args()
     print("NPZ File:", args.npz_file)
 

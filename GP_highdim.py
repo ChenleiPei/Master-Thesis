@@ -12,14 +12,10 @@ from calculate_likelihood import calculate_log_likelihood_from_gaussian
 import argparse
 from LSTM_VAE_Model import LSTMVAE, LSTMDecoder
 import json
-
-
-
-
 import torch
 import gpytorch
 
-# 将 GPModel 类移到全局作用域
+# define the GP model
 class GPModel(gpytorch.models.ExactGP):
     def __init__(self, train_x, train_y, likelihood, lengthscale, outputscale, noise):
         super(GPModel, self).__init__(train_x, train_y, likelihood)
@@ -35,7 +31,7 @@ class GPModel(gpytorch.models.ExactGP):
         covar_x = self.covar_module(x)
         return gpytorch.distributions.MultivariateNormal(mean_x, covar_x)
 
-# 定义 train_gp_model 函数
+
 def train_gp_model(train_x, train_y, args):
     # Ensure train_y is a 1D tensor
     train_y = train_y.view(-1)
@@ -292,7 +288,7 @@ def main():
     return model
 
 
-# 修改 visualize_gp_model 函数中的绘制部分
+# Visualization
 def visualize_gp_model(model, accumulated_samples_list, math_expressions_list):
     # 创建较小网格数据进行预测，减少内存需求
     x = np.linspace(-5, 15, 20)
