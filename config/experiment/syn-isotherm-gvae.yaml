@@ -1,0 +1,10 @@
+# @package _global_
+
+defaults:
+  - override /problem: synthetic_isotherm_problem
+
+experiment:
+  name: Synthetic Isotherm Experiment
+
+n_opt_steps: 10
+experiment_name: isotherm_gvae_baseline

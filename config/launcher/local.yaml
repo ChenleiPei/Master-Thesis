@@ -1,0 +1,9 @@
+# @package _global_
+launcher:
+  name: Local Launcher
+
+hydra:
+  job:
+    chdir: True
+  run:
+    dir:  debug_output/${hydra.job.name}/${now:%Y-%m-%d}/${now:%H-%M-%S}

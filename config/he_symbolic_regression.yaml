@@ -1,0 +1,4 @@
+problem_name: ogden-1
+n_opt_steps: 10
+
+experiment_name: ogden-gvae
