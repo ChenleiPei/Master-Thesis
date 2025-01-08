@@ -35,7 +35,7 @@ def idx2word(idx, i2w, pad_idx):
     sent_str = [str()]*len(idx)
     for i, sent in enumerate(idx):
         for word_tensor in sent:
-            word_id = word_tensor  # 这里直接使用整数值，不调用 .item()
+            word_id = word_tensor
             if word_id == pad_idx:
                 break
             word = i2w.get(word_id, '<unk>')
@@ -85,19 +85,23 @@ def convert_expression(expression_str):
     """
     convert_expression function will convert a string expression to a SymPy expression.
     """
-    # 去除起始标记符 "<start>" 并整理空格
+    # Remove "<start>" if it exists
     expression = expression_str.replace("<start>", "").strip()
-    expression = re.sub(r'(?<=\S)([\+\-\*/()])', r' \1 ', expression)  # 在符号前添加空格
-    expression = re.sub(r'([\+\-\*/()])(?=\S)', r' \1 ', expression)  # 在符号后添加空格
-    expression = re.sub(r'\s+', ' ', expression).strip()  # 去除多余空格
+    expression = re.sub(r'(?<=\S)([\+\-\*/()])', r' \1 ', expression)  # pre-add space
+    expression = re.sub(r'([\+\-\*/()])(?=\S)', r' \1 ', expression)  # post-add space
+    expression = re.sub(r'\s+', ' ', expression).strip()  # remove extra spaces
     expression = re.sub(r'\bcos\b', 'cos', expression)
     expression = re.sub(r'\bexp\b', 'exp', expression)
 
     try:
         # let sympy parse the expression
-        sympy_expr = sp.parse_expr(expression)
+        with sp.evaluate(False): #let the evaluate be false
+            sympy_expr = sp.parse_expr(expression, evaluate=False)
+            #sympy_expr = sp.parse_expr(expression)
+            print(f"Converted SymPy Expression: {sympy_expr}")
         print(f"Converted SymPy Expression: {sympy_expr}")
         return sympy_expr
+
     except sp.SympifyError:
         print("Error: The expression could not be parsed.")
         return None

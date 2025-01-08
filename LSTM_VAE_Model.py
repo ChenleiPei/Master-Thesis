@@ -6,6 +6,7 @@ import argparse
 
 
 
+
 class LSTMEncoder(nn.Module):
     def __init__(self, vocab_size, embedding_size, hidden_size, latent_size, num_layers):
         super(LSTMEncoder, self).__init__()

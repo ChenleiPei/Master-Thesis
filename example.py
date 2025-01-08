@@ -15,16 +15,16 @@ def main():
     params = {
         #"n_samples_data": 100,
         #"n_samples_training": 100000,
-        "n_samples" : 2000,
+        "n_samples" : 100,
         "batch_size": 256,
-       "equations_2000.txt": "equations_2000.txt"
+        "equations_100.txt": "equations_100.txt"
     }
     wandb.config.update(params)
 
     data = CFGEquationDataset(n_samples=params["n_samples"])
     print("Dataset initialized.")
 
-    data.save("equations_2000.txt")
+    data.save("equations_100.txt")
     print("Dataset saved to file.")
 
     emb = MathTokenEmbedding(alphabet=alphabet)

@@ -57,7 +57,7 @@ def target_function(x):
 # Generate and plot Gaussian points
 x_range = (0.1, 10)
 n_points = 10
-filename = "datapoints.npy"
+filename = "datapoints_g4x+2.npy"
 generate_and_save_gaussian_points(target_function, x_range, n_points=n_points, noise=1, filename=filename)
 
 # Add labels and title

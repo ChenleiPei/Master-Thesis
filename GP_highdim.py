@@ -121,7 +121,7 @@ def score_func_VAE(z, model, max_length, num_layers):
 
         # Calculate the likelihood of the math expression
         target_func = math_expression
-        points_file = "datapoints.npy"
+        points_file = "datapoints_g4x+2.npy"
         likelihood = calculate_log_likelihood_from_gaussian(points_file, target_func, std=args.std_likelihood)
         print(f"Likelihood: {likelihood}")
 

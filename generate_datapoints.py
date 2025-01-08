@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import math
 
 
 def generate_and_save_gaussian_points(target_func, x_range, n_points=10, noise=0.01, filename="data_points.npy"):
@@ -46,11 +47,14 @@ def generate_and_save_gaussian_points(target_func, x_range, n_points=10, noise=0
 if __name__ == "__main__":
     # Define the target function as a Python function
     def target_function(x):
-        return (4*x + 2)  # Example: sin(x)
+        return (1 + x * 2)  # Example: sin(x)
 
 
     # Generate and save Gaussian points around the target function
     x_range = (0.1, 10)
     n_points = 10
-    filename = "datapoints.npy"
+    #filename = "datapoints_g2.npy" #g2 is 2 * sin ( x )
+    #filename = "datapoints_g3.npy"  # g3 is 2 + cos ( sin ( x * x ) )
+    #filename = "datapoints_g4.npy"  # g4 is exp ( 3 / exp ( 2 + x / 2 ) + x )
+    filename = "datapoints_g5.npy"  # g5 is 1 + x * 2
     generate_and_save_gaussian_points(target_function, x_range, n_points=n_points, noise=1, filename=filename)

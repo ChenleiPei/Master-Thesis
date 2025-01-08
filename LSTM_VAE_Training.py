@@ -17,6 +17,7 @@ from torchinfo import summary
 from datetime import datetime
 
 
+
 def create_dataset(padded_inputs, padded_targets, sequence_lengths):
     inputs_tensor = torch.tensor(padded_inputs, dtype=torch.long)
     lengths_tensor = torch.tensor(sequence_lengths, dtype=torch.long)
@@ -280,13 +281,13 @@ def main():
     ts = time.strftime('%Y-%b-%d-%H-%M-%S', time.gmtime())
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data_file', type=str, default='equations_10.txt',
+    parser.add_argument('--data_file', type=str, default='equations_20.txt',
                         help='File containing mathematical expressions')
     parser.add_argument('--embedding_size', type=int, default=32, help="Size of embedding layer")
     parser.add_argument('--hidden_size', type=int, default=128, help="Size of hidden LSTM layer")
     parser.add_argument('--latent_size', type=int, default=2, help="Size of latent space")
     parser.add_argument('--batch_size', type=int, default=256, help="Batch size for training")
-    parser.add_argument('--epochs', type=int, default=150, help="Number of training epochs")
+    parser.add_argument('--epochs', type=int, default=300, help="Number of training epochs")
     parser.add_argument('--learning_rate', type=float, default=0.0005, help="Learning rate for optimizer")
     parser.add_argument('--save_model_path', type=str, default='LSTMVAE_bin')
     #addd number of layers
@@ -298,14 +299,14 @@ def main():
     ts = datetime.now().strftime("%Y-%b-%d-%H-%M-%S")
 
     # folder name for WandB
-    folder_name = f"{ts}-LSTM_VAE_Kaiminguni"
+    folder_name = f"{ts}-LSTM_VAE_Kaiminguni-{args.latent_size}-{args.num_layers}"
 
     # 实际保存的文件夹路径
-    save_model_path = os.path.join(args.save_model_path, ts)
+    save_model_path = os.path.join(args.save_model_path, ts, args.latent_size, args.num_layers)
     os.makedirs(save_model_path, exist_ok=True)
 
     # Initialize WandB
-    wandb.init(project="LSTM_VAE_eq_10_2_Dlatent_space",
+    wandb.init(project="LSTM_VAE_eq_20_Fine_tuning",
                name=folder_name,
                config=args)
 
