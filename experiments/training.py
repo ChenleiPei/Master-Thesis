@@ -43,21 +43,21 @@ def setup_dataset(n_samples, n_validation_samples=0, expressions_with_parameters
 
 def setup_dataset_from_file(file_path, n_validation_samples=0):
     """
-    设置数据集，从文件加载表达式。
-    :param file_path: 包含表达式的文件路径，每一行是一个表达式。
-    :param n_validation_samples: 验证集样本数。
-    :return: 如果没有验证集，返回 (training, embedding)，否则返回 (training, validation, embedding)。
+    set up the dataset from a file containing expressions
+    :param file_path: containing expressions, each line is an expression
+    :param n_validation_samples: number of validation samples
+    :return: if there's no validation set, return (training, embedding)，else return (training, validation, embedding)。
     """
     import torch
     from torchvision.transforms import Compose
 
-    # 从文件加载表达式
+    # load expressions from file
     with open(file_path, 'r') as file:
-        expressions = [line.strip() for line in file if line.strip()]  # 去除空行
+        expressions = [line.strip() for line in file if line.strip()]
 
     random.shuffle(expressions)
 
-    # 划分训练集和验证集
+    # split into training and validation sets
     if n_validation_samples > 0:
         training_expressions = expressions[:-n_validation_samples]
         validation_expressions = expressions[-n_validation_samples:]
@@ -65,24 +65,24 @@ def setup_dataset_from_file(file_path, n_validation_samples=0):
         training_expressions = expressions
         validation_expressions = None
 
-    # 创建临时 CFGEquationDataset 实例以获取 pcfg 和 max_grammar_productions
-    temp_dataset = CFGEquationDataset(n_samples=1)  # 用于初始化 pcfg 和 max_grammar_productions
+    # set a temporary dataset to get pcfg and max_grammar_productions
+    temp_dataset = CFGEquationDataset(n_samples=1)  # used to get pcfg and max_grammar_productions
     #pcfg = temp_dataset.pcfg
     pcfg = CFGEquationDataset.get_pcfg(use_original_grammar=True)
-    print("pcfg:", pcfg)
+    #print("pcfg:", pcfg)
     max_grammar_productions = temp_dataset.max_grammar_productions
-    print("max_grammar_productions:", max_grammar_productions)
+    #print("max_grammar_productions:", max_grammar_productions)
 
-    # 初始化 GrammarParseTreeEmbedding
+    # initialize GrammarParseTreeEmbedding
     embedding = GrammarParseTreeEmbedding(pcfg, pad_to_length=max_grammar_productions)
 
-    # 定义转换
+    # define the transformation
     transform = Compose([
         embedding,
         ToTensor(dtype=torch.int64)
     ])
 
-    # 包装数据集
+    # define a wrapper class for the dataset
     class DatasetWrapper:
         def __init__(self, expressions, transform=None, pcfg=None, max_grammar_productions=None):
             self.expressions = expressions
@@ -99,11 +99,11 @@ def setup_dataset_from_file(file_path, n_validation_samples=0):
                 expression = self.transform(expression)
             return expression
 
-    # 创建训练集和验证集
+    # create training and validation datasets
     training = DatasetWrapper(training_expressions, transform=transform, pcfg=pcfg, max_grammar_productions=max_grammar_productions)
     validation = DatasetWrapper(validation_expressions, transform=transform, pcfg=pcfg, max_grammar_productions=max_grammar_productions) if validation_expressions else None
 
-    # 返回结果
+    # return the datasets
     if not validation:
         return training, embedding
     else:
@@ -137,49 +137,42 @@ def setup_dataset_from_file(file_path, n_validation_samples=0):
     else:
         logging.info("No latent vectors extracted.")'''
 
-import torch
-import numpy as np
-import logging
-
-import torch
-import numpy as np
-import logging
 
 def save_latent_space(model, data_loader, output_file, cfg_embedding):
     model.eval()
     all_latent_vectors = []
-    all_labels = []  # 存储X作为标签
+    all_labels = []  # store the labels
 
     with torch.no_grad():
         for X in data_loader:
-            # 直接将X的值用作标签，这里我们假设X可以直接转换为numpy数组
+            # use model.encode(X) to extract latent vectors
             label = X.cpu().numpy()
             latent_mean, latent_log_var = model.encode(X)
-            # 使用重参数化技巧
+            # use reparameterization trick
             z = latent_mean + torch.randn_like(latent_log_var) * torch.exp(0.5 * latent_log_var)
             latent_vector = z.cpu().numpy()
 
             #label = cfg_embedding.labels_to_expressions(X.cpu().numpy())
             for x in X.cpu().numpy():
-                print("x:", x)
-                expression = cfg_embedding.from_index_to_expressions(x)  # 逐个解码
+                #print("x:", x)
+                expression = cfg_embedding.from_index_to_expressions(x)
 
-                all_labels.append(str(expression))  # 添加到标签列表
-                print("expression:", expression)
-                print("all_labels:", all_labels)
+                all_labels.append(str(expression))  # add the expression to the list of labels
+                #print("expression:", expression)
+                #print("all_labels:", all_labels)
 
             all_latent_vectors.append(latent_vector)
-            #all_labels.append(label)  # 将X作为numpy数组存储
-            print("Checking all_labels content:")
-            for i, label in enumerate(all_labels):
-                print(f"Label {i}: {label}, Type: {type(label)}")
+            #all_labels.append(label)  # use the label as the key
+            #print("Checking all_labels content:")
+            #for i, label in enumerate(all_labels):
+                #print(f"Label {i}: {label}, Type: {type(label)}")
 
             all_labels = [str(label) for label in all_labels]
 
-    # 转换列表为 numpy 数组并保存
+    # transform the list of labels to a numpy array
     if all_latent_vectors:
         all_latent_vectors = np.concatenate(all_latent_vectors, axis=0)
-        #all_labels = np.array(all_labels)  # 确保labels是numpy数组
+        #all_labels = np.array(all_labels)  # make sure all_labels is a numpy array
         #all_labels are strings, so we don't need to convert them to numpy array
 
         np.savez(output_file, latent_vectors=all_latent_vectors, labels=all_labels)
@@ -189,16 +182,16 @@ def save_latent_space(model, data_loader, output_file, cfg_embedding):
 
 
 
-# 请确保您的 data_loader 能够返回正确的数据和标签格式
-
-
 
 def main():
+
     ts = datetime.now().strftime("%Y-%b-%d-%H-%M-%S")
+    wandb.login(key="1a52f6079ddb0d4c0e9f5869d9cc0bdd3f5d9a01")
+    wandb.init(project="gvae_pretrained", name=f"gvae_pretrained_{ts}")
+    print("W&B initialized:", wandb.run.id)
 
     #initialize wandb
-    wandb.init(project="gvae_pretrained", name=f"gvae_pretrained_{ts}")
-    wandb.config.update({vars(args)})
+
 
     # Hyperparameters
     #get number of epochs from args
@@ -214,8 +207,8 @@ def main():
 
     # create the dataset
     #training, validation, embedding = setup_dataset(n_samples=10**4, n_validation_samples=10**3, expressions_with_parameters=expression_with_parameters)
-    training, validation, embedding = setup_dataset_from_file(file_path='equations_5.txt', n_validation_samples=args.validation_samples)
-    print("embedding:", embedding)
+    training, validation, embedding = setup_dataset_from_file(file_path=args.data_file, n_validation_samples=args.validation_samples)
+    #print("embedding:", embedding)
     index_to_rule_mapping = {i: rule for i, rule in enumerate(training.pcfg.productions())}
 
     # print the index to rule mapping
@@ -239,8 +232,10 @@ def main():
         training.max_grammar_productions,
         #max_of_production_steps = 128,
         latent_dim=args.latent_dim,
+        gru_num_layers=args.gru_num_layers,
+        gru_num_units=args.gru_num_units,
         rule_embedding=embedding,
-        expressions_with_parameters=expression_with_parameters
+        expressions_with_parameters=expression_with_parameters,
     )
 
     print(model)
@@ -267,13 +262,15 @@ def main():
 
         model.train()
         for X in epoch_steps:
-            print("X:",X)
+            #print("X:",X)
             # compute the loss
             loss = model.negative_elbo(X)
 
             # optimize
             loss.backward()
             optimizer.step()
+
+            wandb.log({"loss": loss.item()}, step=epoch)
 
             epoch_steps.set_postfix({   #Updates the display information of the progress bar
                 'loss': loss.detach().item(),
@@ -328,10 +325,8 @@ def main():
                 logging.info(f"Validation {epoch + 1}: loss={validation_loss} (no improvement for { no_improvement_for_epochs } epochs)")
             #print the input equation and the output equation in validation set, not the index but the euqation
             #record the train loss and validation loss in wandb
-            wandb.log({"train_loss": loss.item(), "validation_loss": validation_loss
+            wandb.log({"validation_loss": validation_loss
                           }, step=epoch)
-
-
 
 
         # early stopping
@@ -347,11 +342,11 @@ def main():
         print("Latent space saved")
 
         #save the model to wandb
-        wandb.save(export_file)
-        wandb.save(latent_space_file)
+        #wandb.save(export_file)
+        #wandb.save(latent_space_file)
 
-        #finish the training
-        wandb.finish()
+    #finish the training
+    wandb.finish()
 
 
 
@@ -361,19 +356,24 @@ if __name__ == "__main__":
     #set the number of epochs
     parser.add_argument('--num_epochs', type=int, default=200, help="Number of training epochs")
     #set the early stopping patience
-    parser.add_argument('--early_stopping_patience', type=int, default=100, help="Number of epochs to wait for improvement before stopping")
+    parser.add_argument('--early_stopping_patience', type=int, default=200, help="Number of epochs to wait for improvement before stopping")
     #set batch size and validation batch size
     parser.add_argument('--batch_size', type=int, default=128, help="Batch size for training")
     parser.add_argument('--val_batch_size', type=int, default=128, help="Batch size for validation")
     #set validation samples
     parser.add_argument('--validation_samples', type=int, default=1000, help="Number of validation")
     #set the latent dimension
-    parser.add_argument('--latent_dim', type=int, default=2, help="Latent dimension of the model")
+    parser.add_argument('--latent_dim', type=int, default=6, help="Latent dimension of the model")
+    #set the number of GRU layers in decoder
+    parser.add_argument('--gru_num_layers', type=int, default=5, help="Number of GRU layers in the decoder")
+    parser.add_argument('--gru_num_units', type=int, default=256, help="Number of GRU units in each layer")
+    parser.add_argument('--data_file', type=str, default='equations_5.txt',)
+    #parse the maximum number of production steps
+    parser.add_argument('--max_of_production_steps', type=int, default=128)
+
 
     args = parser.parse_args()
 
     #use wandb to record all args
-
-
 
     main()

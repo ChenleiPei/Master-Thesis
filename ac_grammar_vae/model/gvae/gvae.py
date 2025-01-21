@@ -17,7 +17,7 @@ from botorch.optim import optimize_acqf
 
 class GrammarVariationalAutoencoder(torch.nn.Module):
 
-    def __init__(self, num_grammar_productions, max_of_production_steps, latent_dim, rule_embedding: GrammarParseTreeEmbedding, expressions_with_parameters: bool = False):
+    def __init__(self, num_grammar_productions, max_of_production_steps, latent_dim, gru_num_layers, gru_num_units, rule_embedding: GrammarParseTreeEmbedding, expressions_with_parameters: bool = False):
         super(GrammarVariationalAutoencoder, self).__init__()
 
         self.latent_dim = latent_dim
@@ -32,14 +32,17 @@ class GrammarVariationalAutoencoder(torch.nn.Module):
                             latent_dim=latent_dim,
                             conv_num_filters=[2,3,4],
                             conv_filter_sizes=[3,3,3],   #[2,3,4],
-                            dense_units=[100]
+                            dense_units=[512]
                         )
 
         # initialize the decoder network
         self.decoder = GrammarDecoderNetwork(
                             num_grammar_productions=num_grammar_productions,
                             max_of_production_steps=max_of_production_steps,
-                            conv_filter_sizes=[3, 3, 3] #new added
+                            conv_filter_sizes=[3, 3, 3],#new added
+                            latent_dim=latent_dim,
+                            gru_num_units=gru_num_units,
+                            gru_num_layers=gru_num_layers,
                         )
 
         self.multinomial_nll_loss = torch.nn.CrossEntropyLoss()
@@ -294,7 +297,7 @@ class GrammarVariationalAutoencoder(torch.nn.Module):
             -2 * torch.sum(log_std, dim=-1) - self.latent_dim + torch.sum(mean ** 2, dim=-1) + torch.sum(
                 torch.exp(log_std) ** 2, dim=-1))
 
-        return (rec_nll + 0.1 * kl_divergence) / batch_size
+        return (rec_nll + 0.001 * kl_divergence) / batch_size
 
     def forward(self, X):
         # Encoding step

@@ -6,7 +6,7 @@ class GrammarEncoderNetwork(torch.nn.Module):
     def __init__(self,
                  num_grammar_productions,
                  max_of_production_steps,
-                 latent_dim = 2,
+                 latent_dim,
                  conv_num_filters=[],
                  conv_filter_sizes=[],
                  conv_activation=torch.nn.ReLU(),
@@ -43,6 +43,13 @@ class GrammarEncoderNetwork(torch.nn.Module):
         self.dense_network = torch.nn.Sequential()
         in_features = max_of_production_steps * in_channels
         for i, n_units in enumerate(dense_units):
+            self.dense_network.add_module(f"dense_{i}", torch.nn.Linear(in_features=in_features, out_features=n_units))
+            self.dense_network.add_module(f"actv_{i}", dense_activation)
+            in_features = n_units
+
+        # add a dense layer
+        new_dense_units = [512, 512]
+        for i, n_units in enumerate(new_dense_units, start=len(dense_units)):
             self.dense_network.add_module(f"dense_{i}", torch.nn.Linear(in_features=in_features, out_features=n_units))
             self.dense_network.add_module(f"actv_{i}", dense_activation)
             in_features = n_units

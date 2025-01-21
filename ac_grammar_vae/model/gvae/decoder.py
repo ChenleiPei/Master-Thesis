@@ -6,20 +6,24 @@ class GrammarDecoderNetwork(torch.nn.Module):
     def __init__(self,
                  num_grammar_productions,
                  max_of_production_steps,
-                 latent_dim=2,
-                 gru_num_units=64,
-                 gru_num_layers=3,
+                 latent_dim,
+                 gru_num_units,
+                 gru_num_layers,
                  conv_filter_sizes=[],
                  conv_activation=torch.nn.ReLU(),
                  conv_applies_batch_norm=True,
                  dense_units=[],
-                 dense_activation=torch.nn.ReLU()):
+                 dense_activation=torch.nn.ReLU(),
+                 #use the args from the main function
+                 args=None):
         super(GrammarDecoderNetwork, self).__init__()
 
         self.max_production_steps = max_of_production_steps
         self.gru_num_units = gru_num_units
         self.gru_num_layers = gru_num_layers
         self.pre_network = torch.nn.Sequential()
+        self.latent_dim = latent_dim
+        self.gru_num_units = gru_num_units
 
         # does it make sense to start with a batch-norm ?!
         self.pre_network.append(torch.nn.BatchNorm1d(num_features=latent_dim))
@@ -34,6 +38,9 @@ class GrammarDecoderNetwork(torch.nn.Module):
                 num_layers=gru_num_layers,
                 batch_first=True
             )
+
+        print("num of layers in GRU:", gru_num_layers)
+
 
         self.output_network = torch.nn.Sequential(
             torch.nn.Linear(gru_num_units, num_grammar_productions)
