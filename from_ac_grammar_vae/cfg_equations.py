@@ -20,19 +20,16 @@ class CFGEquationDataset(Dataset):
     def __initialize_grammar(self, use_original_grammar):
 
         if use_original_grammar:
-            rules = """
-            S -> S '+' T
-            S -> S '*' T
-            S -> S '/' T
-            S -> T
-            T -> '(' S ')'
-            T -> 'sin' '(' S ')'
-            T -> 'cos' '(' S ')'
-            T -> 'exp' '(' S ')'
-            T -> 'x'
-            T -> '1'
-            T -> '2'
-            T -> '3'
+            rules = """     
+            S -> A '*' B
+            A -> 'St'
+            B -> C '*' D
+            C -> '1'
+            C -> '1' '/' '(' '1' '+' 'k2' '*' 'x' ')'
+            D -> 'k1' '*' 'x' '/' '(' '1' '+' 'k1' '*' 'x' ')'
+            B -> E '+' F
+            E -> 'f1' 'k1' '*' 'x' '/' '(' '1' '+' 'k1' '*' 'x' ')'
+            F -> 'f2' 'k2' '*' 'x' '/' '(' '1' '+' 'k2' '*' 'x' ')'
             """
         else:
             rules = """
@@ -114,3 +111,19 @@ def sample_pcfg(pcfg: nltk.grammar.PCFG, max_production_count=15, random_seed=No
         search_from_idx = idx
 
     return terminals
+
+#original grammar
+"""
+            S -> S '+' T
+            S -> S '*' T
+            S -> S '/' T
+            S -> T
+            T -> '(' S ')'
+            T -> 'sin' '(' S ')'
+            T -> 'cos' '(' S ')'
+            T -> 'exp' '(' S ')'
+            T -> 'x'
+            T -> '1'
+            T -> '2'
+            T -> '3'
+"""

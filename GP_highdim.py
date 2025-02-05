@@ -14,6 +14,7 @@ from LSTM_VAE_Model import LSTMVAE, LSTMDecoder
 import json
 import torch
 import gpytorch
+import matplotlib.cm as cm
 
 # define the GP model
 class GPModel(gpytorch.models.ExactGP):
@@ -52,7 +53,6 @@ def train_gp_model(train_x, train_y, args):
     likelihood.eval()
 
     return model, likelihood
-
 
 
 class EnergyFunction(torch.nn.Module):
@@ -110,6 +110,8 @@ def score_func_VAE(z, model, max_length, num_layers):
     # Transfer the index to expression
     expression = model.reconstruct_expression(index, from_indices=True)
     print(f"Generated expression: {expression}")
+    #calculate prior of the expression
+
 
     if isinstance(expression, list):
         expression = " ".join(expression)
@@ -123,7 +125,7 @@ def score_func_VAE(z, model, max_length, num_layers):
         target_func = math_expression
         points_file = "datapoints_g4x+2.npy"
         likelihood = calculate_log_likelihood_from_gaussian(points_file, target_func, std=args.std_likelihood)
-        print(f"Likelihood: {likelihood}")
+        #print(f"Likelihood: {likelihood}")
 
         '''# Check if the generated expression is meaningful (e.g., valid mathematical expression)
         if math_expression is None or not math_expression:
@@ -283,7 +285,7 @@ def main():
         json.dump(math_expressions_list_str, f, indent=4)
 
     # Visualization
-    visualize_gp_model(model, accumulated_samples_list, math_expressions_list_str)
+    # visualize_gp_model(model, accumulated_samples_list, math_expressions_list_str)
 
     return model
 
@@ -315,7 +317,7 @@ def visualize_gp_model(model, accumulated_samples_list, math_expressions_list):
 
     Z = mean.reshape(X.shape)
 
-    import matplotlib.cm as cm
+
 
     unique_expressions = list(set(math_expressions_list))
     colors = cm.get_cmap('tab10')
@@ -340,8 +342,8 @@ def visualize_gp_model(model, accumulated_samples_list, math_expressions_list):
     ax.legend(handles, unique_expressions, loc='upper right', bbox_to_anchor=(1.3, 1))
 
 
-    ax.set_xlabel('X')
-    ax.set_ylabel('Y')
+    ax.set_xlabel('z1')
+    ax.set_ylabel('z2')
     ax.set_zlabel('Mean Prediction')
 
     ax.set_title('3D Visualization of GP Model Mean Predictions with Accumulated Samples')
@@ -355,14 +357,14 @@ if __name__ == "__main__":
     parser.add_argument("--model", type=str, default="LSTMVAE_bin/2024-Dec-04-19-08-42/model_final.pth")
     parser.add_argument('--vocab_path', type=str, help='Path to the vocab JSON file',
                         default='./LSTMVAE_bin/2024-Dec-04-19-08-42/vocab.json')
-    parser.add_argument("--max_length", type=int, default=37)
-    parser.add_argument("--num_layers", type=int, default=2)
+    #parser.add_argument("--max_length", type=int, default=37)
+    #parser.add_argument("--num_layers", type=int, default=2)
     parser.add_argument("--dimension", type=int, default=2)
-    parser.add_argument("--lengthscale", type=float, default=2)
+    parser.add_argument("--lengthscale", type=float, default=0.5)
     parser.add_argument("--outputscale", type=float, default=1.0)
     parser.add_argument("--std_likelihood", type=float, default=1)
     parser.add_argument("--noise", type=float, default=0.01)
-    parser.add_argument("--mean", type=float, default=10)
+    #parser.add_argument("--mean", type=float, default=0)
     parser.add_argument("--std_dev", type=float, default=1.5)
     parser.add_argument("--steps", type=int, default=10)
     parser.add_argument("--step_size", type=float, default=0.015)
@@ -371,8 +373,8 @@ if __name__ == "__main__":
     parser.add_argument("--upper_bound", type=int, default=5)
     parser.add_argument("--iterations", type=int, default=800)
     parser.add_argument("--number_of_test_points", type=int, default=50)
-    parser.add_argument("--iterations_sampling", type=int, default=200)
-    parser.add_argument("--initial_position", type=float, default=[[0, 0]])
+    parser.add_argument("--iterations_sampling", type=int, default=1000)
+    parser.add_argument("--initial_position", type=float, default=[[5, 8]])
 
     args = parser.parse_args()
     max_length = args.max_length

@@ -19,7 +19,9 @@ from datetime import datetime
 
 
 def create_dataset(padded_inputs, padded_targets, sequence_lengths):
+    #print("padded_inputs:",padded_inputs)
     inputs_tensor = torch.tensor(padded_inputs, dtype=torch.long)
+    #print("inputs_tensor:",inputs_tensor)
     lengths_tensor = torch.tensor(sequence_lengths, dtype=torch.long)
     dataset = TensorDataset(inputs_tensor, inputs_tensor, lengths_tensor)
     return dataset
@@ -34,12 +36,17 @@ def loss_function(recon_x, x, mu, log_var, vocab_size, beta):
     """
     Compute the loss function for the VAE
     """
+
+    #batch_size = x.size(0)
+
     # Reconstruction loss using CrossEntropy
     print("beta:",beta)
     recon_loss = F.cross_entropy(recon_x.view(-1, vocab_size), x.view(-1), reduction='sum')
+    #recon_loss = recon_loss / batch_size
 
     # KL divergence loss
     kld_loss = -0.5 * torch.sum(1 + log_var - mu.pow(2) - log_var.exp())
+    #recon_loss = recon_loss / batch_size
 
     # Total loss with beta annealing
     total_loss = recon_loss + 0.3*beta * kld_loss
@@ -78,6 +85,11 @@ def train_vae(model, train_loader, validation_loader, test_loader, epochs, lr, v
         table = wandb.Table(columns=["Original Expression", "Reconstructed Expression"])
 
         for batch_idx, (inputs, targets, lengths) in enumerate(train_loader):
+
+            #print the number of samples in train_loader
+            print("len(train_loader):",len(train_loader.dataset))
+            #print the number of samples in validation_loader
+            print("len(validation_loader):",len(validation_loader.dataset))
 
             optimizer.zero_grad()
 
@@ -281,17 +293,17 @@ def main():
     ts = time.strftime('%Y-%b-%d-%H-%M-%S', time.gmtime())
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data_file', type=str, default='equations_20.txt',
+    parser.add_argument('--data_file', type=str, default='Real_test_dataset.txt',
                         help='File containing mathematical expressions')
     parser.add_argument('--embedding_size', type=int, default=32, help="Size of embedding layer")
     parser.add_argument('--hidden_size', type=int, default=128, help="Size of hidden LSTM layer")
-    parser.add_argument('--latent_size', type=int, default=2, help="Size of latent space")
+    parser.add_argument('--latent_size', type=int, default=4, help="Size of latent space")
     parser.add_argument('--batch_size', type=int, default=256, help="Batch size for training")
-    parser.add_argument('--epochs', type=int, default=300, help="Number of training epochs")
+    parser.add_argument('--epochs', type=int, default=150, help="Number of training epochs")
     parser.add_argument('--learning_rate', type=float, default=0.0005, help="Learning rate for optimizer")
-    parser.add_argument('--save_model_path', type=str, default='LSTMVAE_bin')
+    parser.add_argument('--save_model_path', type=str, default='LSTMVAE_bin_real_test')
     #addd number of layers
-    parser.add_argument('--num_layers', type=int, default=5, help="Number of LSTM layers")
+    parser.add_argument('--num_layers', type=int, default=3, help="Number of LSTM layers")
     args = parser.parse_args()
 
 
@@ -302,11 +314,13 @@ def main():
     folder_name = f"{ts}-LSTM_VAE_Kaiminguni-{args.latent_size}-{args.num_layers}"
 
     # 实际保存的文件夹路径
-    save_model_path = os.path.join(args.save_model_path, ts, args.latent_size, args.num_layers)
+    save_model_path = os.path.join(args.save_model_path, ts, str(args.latent_size), str(args.num_layers))
+
+    #save_model_path = os.path.join(args.save_model_path, ts, args.latent_size, args.num_layers)
     os.makedirs(save_model_path, exist_ok=True)
 
     # Initialize WandB
-    wandb.init(project="LSTM_VAE_eq_20_Fine_tuning",
+    wandb.init(project="LSTM_VAE_real_test",
                name=folder_name,
                config=args)
 
@@ -318,6 +332,7 @@ def main():
 
     # Use the process_equations function to load and process the data
     alphabet_size, input_sequences, target_sequences, sequence_lengths, vocab = process_equations(args.data_file)
+    print("vocab:",vocab)
     #print("max sequence length:",max(sequence_lengths))
     max_sequence_length = max(sequence_lengths)
 

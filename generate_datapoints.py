@@ -2,21 +2,19 @@ import numpy as np
 import matplotlib.pyplot as plt
 import math
 
-
-def generate_and_save_gaussian_points(target_func, x_range, n_points=10, noise=0.01, filename="data_points.npy"):
+def generate_and_save_gaussian_points(target_func, x_range, n_points=30, noise=100, filename="data_points"):
     """
-    Generate random points around a target function with independent Gaussian noise and save them.
+    Generate random points around a target function with independent Gaussian noise and save them into two separate files for training and testing.
 
     Parameters:
     - target_func (function): The target function providing the mean values.
     - x_range (tuple): Range of the input variable (x_min, x_max).
     - n_points (int): Number of points to generate.
     - noise (float): Standard deviation of Gaussian noise.
-    - filename (str): The filename to save the generated points.
+    - filename (str): The base filename to save the generated points, without file extension.
 
     Returns:
-    - x (numpy array): Input values.
-    - y (numpy array): Output values around the target function.
+    - None
     """
     # Generate evenly spaced x values in the range
     x = np.linspace(x_range[0], x_range[1], n_points).reshape(-1, 1)
@@ -25,36 +23,44 @@ def generate_and_save_gaussian_points(target_func, x_range, n_points=10, noise=0
     y_mean = target_func(x).reshape(-1)
 
     # Add independent Gaussian noise to each point
-    y_samples = y_mean + np.random.normal(0, noise, y_mean.shape)
+    print(noise)
+    actual_noise = np.random.normal(0, noise, y_mean.shape)
+    print('actual_noise', actual_noise)
+    y_samples = y_mean + actual_noise
 
-    # Save the points
-    np.save(filename, np.column_stack((x, y_samples)))
+    # Combine x and y to form data points
+    data_points = np.column_stack((x, y_samples))
+
+    # Shuffle the data points to ensure random distribution for train/test split
+    np.random.shuffle(data_points)
+
+    # Split the data into 80% train and 20% test
+    split_index = int(0.8 * len(data_points))
+    train = data_points[:split_index]
+    test = data_points[split_index:]
+
+    # Save the train and test datasets with specific names
+    np.save(f"{filename}_train.npy", train)
+    np.save(f"{filename}_test.npy", test)
 
     # Plot the points
     plt.figure(figsize=(10, 6))
     plt.plot(x, target_func(x), 'r--', label='Target Function')
-    plt.scatter(x, y_samples, color='blue', alpha=0.6, label='Generated Gaussian Points')
+    plt.scatter(train[:, 0], train[:, 1], color='green', alpha=0.6, label='Train Points')
+    plt.scatter(test[:, 0], test[:, 1], color='orange', alpha=0.6, label='Test Points')
     plt.xlabel("x")
     plt.ylabel("y")
     plt.legend()
     plt.title("Independent Gaussian Points Around Target Function")
     plt.show()
 
-    return x, y_samples
-
-
 # Example usage:
 if __name__ == "__main__":
-    # Define the target function as a Python function
     def target_function(x):
-        return (1 + x * 2)  # Example: sin(x)
+        return np.sqrt(x)   # Example target function
 
+    x_range = (0, 5)
+    n_points = 30
+    filename = "Nguyen_8"
+    generate_and_save_gaussian_points(target_function, x_range, n_points=n_points, noise=1000, filename=filename)
 
-    # Generate and save Gaussian points around the target function
-    x_range = (0.1, 10)
-    n_points = 10
-    #filename = "datapoints_g2.npy" #g2 is 2 * sin ( x )
-    #filename = "datapoints_g3.npy"  # g3 is 2 + cos ( sin ( x * x ) )
-    #filename = "datapoints_g4.npy"  # g4 is exp ( 3 / exp ( 2 + x / 2 ) + x )
-    filename = "datapoints_g5.npy"  # g5 is 1 + x * 2
-    generate_and_save_gaussian_points(target_function, x_range, n_points=n_points, noise=1, filename=filename)

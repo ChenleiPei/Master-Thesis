@@ -10,24 +10,24 @@ from from_ac_grammar_vae.transforms import MathTokenEmbedding, ToTensor, Compose
 
 def main():
 
-    wandb.init(project="Bayesian reasoning in latent space", name="Equation generation")
+    #wandb.init(project="Bayesian reasoning in latent space", name="Equation generation")
 
     params = {
-        #"n_samples_data": 100,
-        #"n_samples_training": 100000,
-        "n_samples" : 100,
+        "n_samples_data": 100,
+        "n_samples_training": 100000,
+        "n_samples" : 30,
         "batch_size": 256,
-        "equations_100.txt": "equations_100.txt"
+        "equations_30_isotherm.txt": "equations_30_isotherm.txt"
     }
-    wandb.config.update(params)
+    #wandb.config.update(params)
 
     data = CFGEquationDataset(n_samples=params["n_samples"])
     print("Dataset initialized.")
 
-    data.save("equations_100.txt")
+    data.save("equations_30_isotherm.txt")
     print("Dataset saved to file.")
 
-    emb = MathTokenEmbedding(alphabet=alphabet)
+    '''emb = MathTokenEmbedding(alphabet=alphabet)
 
     x = data[42]
     x_emb = emb.embed(x)
@@ -68,9 +68,9 @@ def main():
         })
         print(eq_dec)
 
-    #print_contact_info()
+    #print_contact_info()'''
 
-    wandb.finish()
+    #wandb.finish()
 
 
 if __name__ == "__main__":

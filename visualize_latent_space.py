@@ -41,17 +41,20 @@ def visualize_latent_space_2d(npz_file):
         )
 
 
-    plt.xlabel('Component 1')
-    plt.ylabel('Component 2')
-    plt.title('2D Latent Space Visualization by Original Expression')
+    plt.xlabel('z1')
+    plt.ylabel('z2')
+    plt.title('2D Latent Space Visualization by Original Expression with beta=')
     plt.legend(loc='best', fontsize='small', title='Original Expressions')
     plt.grid(True)
     plt.show()
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Visualize 2D latent space from an .npz file')
-    #parser.add_argument('--npz_file', type=str, help='Path to the .npz file containing latent vectors and original expressions', default='LSTMVAE_bin/2024-Dec-04-19-08-42/latent_vectors_and_expressions.npz')
-    parser.add_argument('--npz_file', type=str, help='Path to the .npz file containing latent vectors and original expressions', default='from_ac_grammar_vae/latent_space_parametric_3.npz')
+    #parser.add_argument('--npz_file', type=str, help='Path to the .npz file containing latent vectors and original expressions', default='LSTMVAE_bin/2024-Dec-04-20-23-51/latent_vectors_and_expressions.npz')
+    parser.add_argument('--npz_file', type=str,
+                        help='Path to the .npz file containing latent vectors and original expressions',
+                        default='LSTMVAE_bin_real_test/2025-Feb-04-14-06-25/2/3/latent_vectors_and_expressions.npz')
+    #parser.add_argument('--npz_file', type=str, help='Path to the .npz file containing latent vectors and original expressions', default='from_ac_grammar_vae/latent_space_parametric_3.npz')
     args = parser.parse_args()
     print("NPZ File:", args.npz_file)
 

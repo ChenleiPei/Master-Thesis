@@ -106,6 +106,8 @@ def convert_expression(expression_str):
         print("Error: The expression could not be parsed.")
         return None
 
+convert_expression("<start> sqrt(x)")
+
 
 import numpy as np
 from sympy import symbols, sympify

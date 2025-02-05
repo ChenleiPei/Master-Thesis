@@ -25,7 +25,7 @@ def init_wandb(args):
     current_time = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
     datapoints_name = os.path.splitext(os.path.basename(args.datapoints))[0]
     wandb.init(
-        project=f"Thesis_GPHMC_Model-Fitting_mean=actual_withlog_RBF-{datapoints_name}-{args.initial_position}_test",  # Set project name
+        project=f"Real_test_GPHMC_Model-Fitting_mean=actual_withlog_RBF-{datapoints_name}-{args.initial_position}_test",  # Set project name
         name=f"RUN-{current_time}-arg.datapoints",  # Set run name
         config={
             "model": args.model,
@@ -185,10 +185,22 @@ def hmc_sample(initial_position, energy_function, steps, step_size, num_samples,
 
 def uniform_sampling_and_gp_fitting(args):
     # generate grid points
-    x = np.linspace(args.boundsx[0], args.boundsx[1], args.grid_size)
+    '''x = np.linspace(args.boundsx[0], args.boundsx[1], args.grid_size)
     y = np.linspace(args.boundsy[0], args.boundsy[1], args.grid_size)
     grid_points = np.array(np.meshgrid(x, y)).T.reshape(-1, 2)
+    grid_points_tensor = torch.tensor(grid_points, dtype=torch.float32)'''
+
+
+    # generate grid points
+    linear_space = np.linspace(args.boundsx[0],args.boundsx[1], args.grid_size)
+
+    mesh = np.meshgrid(*([linear_space] * args.dimension), indexing='ij')
+
+    grid_points = np.stack(mesh, axis=-1).reshape(-1, 4)
+
     grid_points_tensor = torch.tensor(grid_points, dtype=torch.float32)
+
+
 
     # load VAE model and vocab
     VAEmodel = torch.load(args.model)
@@ -234,6 +246,7 @@ def uniform_sampling_and_gp_fitting(args):
 
 # VAE的Score Function
 def score_function_vae(z, model, max_length, vocab, args):
+
     logits, index = model.decoder(z.unsqueeze(0), max_length, start_token_idx=vocab['<start>'])
 
     # make sure index is a 2D tensor
@@ -309,8 +322,8 @@ def score_func_VAE(z, model, max_length, num_layers):
 
 def visualize_gp_model_ini(model, grid_points, valid_points, failed_points, expressions, likelihoods):
     # Create grid for visualization
-    x = np.linspace(-5, 15, args.grid_size_show)
-    y = np.linspace(-5, 8, args.grid_size_show)
+    x = np.linspace(-5, 5, args.grid_size_show)
+    y = np.linspace(-5, 5, args.grid_size_show)
     X, Y = np.meshgrid(x, y)
     visualization_points = np.vstack([X.flatten(), Y.flatten()]).T  # Shape (10000, 2)
 
@@ -604,131 +617,106 @@ def main():
     step_size = torch.full((dimension,), args.step_size, dtype=torch.float32)
     num_samples = args.num_samples
     bounds = torch.tensor([args.boundsx, args.boundsy], dtype=torch.float32)
-    #iterations = args.iterations
     initial_position = torch.tensor(args.initial_position, dtype=torch.float32)
 
-    # exploration phase, here we use the dense grid of points to initialize the GP model
+    # initialize the model and likelihood using uniform_sampling_and_gp_fitting
     model, likelihood = uniform_sampling_and_gp_fitting(args)
 
-    #sampling phase
-    #initialize the expressions list
     model.eval()
     likelihood.eval()
-
     math_expressions_list = []
 
     initial_position_sphase = torch.tensor(args.initial_position, dtype=torch.float32)
     sphase_samples = initial_position_sphase.clone()
 
-    # define the 'ground truth'
-    if args.datapoints == "datapoints_g4x+2.npy":
-        ground_truth_expressions = ["4 * x + 2", "2 * x * 2 + 2", "2 * 2 * x + 2", "2*x*2 + 2", "2*2*x + 2"]
-    if args.datapoints == "datapoints_g2.npy":
-        ground_truth_expressions = ["2 * sin ( x )", "2*sin(x)", "2 * sin(x)", "sin ( x ) * 2", "sin(x) * 2", "sin(x)*2"]
-    if args.datapoints == "datapoints_g3.npy":
-        ground_truth_expressions = ["2 + cos ( sin ( x * x ) )", "2+cos(sin(x*x))", "2 + cos(sin(x*x))", "cos ( sin ( x * x ) ) + 2", "cos(sin(x*x)) + 2", "cos(sin(x*x))+2"]
-    if args.datapoints == "datapoints_g4.npy":
-        ground_truth_expressions = ["exp ( 3 / exp ( 2 + x / 2 ) + x )", "exp(3/exp(2+x/2)+x", "exp ( 3 / exp ( 2 + x / 2 ) + x )", "exp(3/exp(2+x/2)+x)", "exp(x+3/exp(2+x/2))", "exp ( x + 3 / exp ( 2 + x / 2 ) )"]
-    if args.datapoints == "datapoints_g5.npy":
-        ground_truth_expressions = ["1 + x * 2", "1+x*2", "1 + 2 * x", "1+2*x", "2 * x + 1", "2*x+1", "x * 2 + 1", "x*2+1", "x*2 + 1"]
 
-    print(f"Ground Truth Expressions: {ground_truth_expressions}")
-    ground_truth_count = 0
-    first_ground_truth_iteration = -1
-
-    valid_result_count = 0  # count the number of valid results
     total_iterations = iterations_sampling
+    burn_in_phase = 300
+    expression_count = {}
 
     for i in range(iterations_sampling):
-        """if model is None:
-            energy_function = lambda x: torch.tensor(0.0, dtype=x.dtype, device=x.device, requires_grad=True)
-        else:
-            energy_function = EnergyFunction_sample(model, likelihood)"""
-
         energy_function = EnergyFunction_sample(model, likelihood)
-
         new_samples = hmc_sample(
             sphase_samples[-1:], energy_function, steps, step_size, num_samples, bounds=bounds
-        )  # use the last sample as the initial positiond
+        )
         print(f"New samples: {new_samples}")
         new_samples = new_samples.view(initial_position_sphase.shape)
 
-        # the score function for VAE
-        result = score_func_VAE(new_samples, VAEmodel, max_length, num_layers)
-        if result is not None:
-            valid_result_count += 1
-            Z_score_new, expression = result
-            math_expressions_list.append(expression)
-            normalized_expression = str(expression)
+        if i >= burn_in_phase:  # Burn-in phase
+            result = score_func_VAE(new_samples, VAEmodel, max_length, num_layers)
+            if result is not None:
 
-            print("normalized_expression", normalized_expression)
-            if normalized_expression in ground_truth_expressions:
-                ground_truth_count += 1
-                if first_ground_truth_iteration == -1:  # record the first iteration where ground truth is found
-                    first_ground_truth_iteration = i
+                Z_score_new, expression = result
+                math_expressions_list.append(expression)
+                normalized_expression = str(expression)
 
-        sphase_samples = torch.cat([sphase_samples, new_samples], 0)  # concatenate the new samples
+                # count the number of times each expression is sampled
+                if normalized_expression in expression_count:
+                    expression_count[normalized_expression] += 1
+                else:
+                    expression_count[normalized_expression] = 1
 
-        print(f"Iteration {i}: Valid Results Count = {valid_result_count}")
-
-    # calculate the ratio of valid results and ground truth
-    valid_result_ratio = valid_result_count / total_iterations
-    ground_truth_ratio = ground_truth_count / len(math_expressions_list) if math_expressions_list else 0
+                print("normalized_expression", normalized_expression)
 
 
-    print(f"Valid Result Ratio: {valid_result_ratio:.2%}")
-    print(f"Ground Truth Ratio: {ground_truth_ratio:.2%}")
-    if first_ground_truth_iteration != -1:
-        print(f"First Ground Truth Found at Iteration: {first_ground_truth_iteration}")
-    else:
-        print("Ground Truth was not found in the iterations.")
 
 
-    # Visualize the GP model with accumulated samples
+        sphase_samples = torch.cat([sphase_samples, new_samples], 0)
 
-    # for the video
-    #visualize_gp_model_exp_video(model, sphase_samples, math_expressions_list, args)
+        print(f"Iteration {i}")
 
-    # without video
+
+    #print all the expressions and their corresponding counts
+    print(f"Expression count: {expression_count}")
+
+    top_three_expressions = sorted(expression_count.items(), key=lambda item: item[1], reverse=True)[:3]
+    print(f"Top three sampled expressions after burn-in: {top_three_expressions}")
+
+
     visualize_gp_model_exp(model, sphase_samples, math_expressions_list, args)
 
-    #recors the valid result ratio and ground truth ratio and first ground truth iteration in wandb
-    wandb.log({
-        "Valid Result Ratio": valid_result_ratio,
-        "Ground Truth Ratio": ground_truth_ratio,
-        "First Ground Truth Iteration": first_ground_truth_iteration
-    })
+    # save the expressions and their counts to a file
+    with open(f"expression_count_{args.datapoints}.txt", "w") as f:
+        for expression, count in expression_count.items():
+            f.write(f"{expression}: {count}\n")
 
+    # save the top three expressions to a file with the name with datapoints
 
-    return model,likelihood
+    with open(f"top_three_expressions_{args.datapoints}.txt", "w") as f:
+        for expression, count in top_three_expressions:
+            f.write(f"{expression}: {count}\n")
+
+    return model, likelihood
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model", type=str, default="LSTMVAE_bin/2024-Dec-04-19-08-42/model_final.pth") #for 5 expressions
-    parser.add_argument('--vocab_path', type=str, default='./LSTMVAE_bin/2024-Dec-04-19-08-42/vocab.json') #for 5 expressions
+    parser.add_argument("--model", type=str, default="LSTMVAE_bin_real_test/2025-Feb-04-16-55-52/4/3/model_final.pth")
+    parser.add_argument('--vocab_path', type=str, default='LSTMVAE_bin_real_test/2025-Feb-04-16-55-52/4/3/vocab.json')
 
     #parser.add_argument("--model", type=str, default="model_final.pth")
     #parser.add_argument('--vocab_path', type=str, default='vocab.json')
-    parser.add_argument("--datapoints", type=str, default="datapoints_g4x+2.npy")
+    parser.add_argument("--datapoints", type=str, default="Nguyen_5_train.npy")
 
     parser.add_argument("--max_length", type=int, default=37)
-    parser.add_argument("--grid_size", type=int, default=30, help="Number of points per axis for uniform sampling")
-    parser.add_argument("--grid_size_show", type=int, default=200, help="Number of points per axis for visualization")
-    parser.add_argument("--dimension", type=int, default=2)
-    parser.add_argument("--lengthscale", type=float, default=0.5)
-    parser.add_argument("--outputscale", type=float, default=5.0)
+    parser.add_argument("--grid_size", type=int, default=20, help="Number of points per axis for uniform sampling")
+    parser.add_argument("--grid_size_show", type=int, default=10, help="Number of points per axis for visualization")
+    parser.add_argument("--dimension", type=int, default=4)
+    parser.add_argument("--lengthscale", type=float, default=3.0)
+    parser.add_argument("--outputscale", type=float, default=3.0)
     parser.add_argument("--std_likelihood", type=float, default=1, help="likelihood standard deviation for calculating log likelihood")
     parser.add_argument("--noise", type=float, default=0.1)
-    parser.add_argument("--boundsx", type=list, default=[-5, 15])
-    parser.add_argument("--boundsy", type=list, default=[-5, 8])
-    parser.add_argument("--num_layers", type=int, default=2)
+    parser.add_argument("--boundsx", type=list, default=[-5, 5])
+    parser.add_argument("--boundsy", type=list, default=[-5, 5])
+    parser.add_argument("--num_layers", type=int, default=3)
     parser.add_argument("--iterations of gp training", type=int, default=1000)
     parser.add_argument("--number_of_test_points", type=int, default=50)
     parser.add_argument("--iterations_sampling", type=int, default=1000)
-    parser.add_argument("--initial_position", type=float, default=[[5, 8]])
+    parser.add_argument("--initial_position", type=float, default=[[0, 0]])
     parser.add_argument("--steps", type=int, default=100)
     parser.add_argument("--step_size", type=float, default=0.015)
     parser.add_argument("--num_samples", type=int, default=1)
+    parser.add_argument("--burn_in_steps", type=int, default=300)
 
 
     args = parser.parse_args()

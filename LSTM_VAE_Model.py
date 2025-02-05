@@ -85,7 +85,7 @@ class LSTMDecoder(nn.Module):
 
     def forward(self, z, max_length, start_token_idx):
         # Map latent vector to hidden state
-        #print("z:",z.shape)
+        print("z:",z.shape)
         hidden = F.leaky_relu(self.latent_to_hidden(z)).unsqueeze(0)  # [1, batch_size, hidden_size]
         print("hidden1:", hidden.shape)
         print("number of layers", self.num_layers)
