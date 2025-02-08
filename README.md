@@ -1,4 +1,4 @@
-# Grammar Variational Autoencoder with Gaussian Hamiltonian Monte Carlo
+# Grammar Variational Autoencoder with Gaussian Hamiltonian Monte Carlo Sampling
 
 This branch is based on the Grammar-VAE paper available [here](https://arxiv.org/abs/1703.01925) and based on the implementation work of Tim Schneider available [here](https://github.com/TimPhillip/ac_grammar_vae).
 
