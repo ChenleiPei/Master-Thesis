@@ -1,15 +1,16 @@
-This branch is based on the Grammar-VAE paper https://arxiv.org/abs/1703.01925 and based on the implement work of Tim Schneider https://github.com/TimPhillip/ac_grammar_vae.
+# Grammar Variational Autoencoder with Gaussian Hamiltonian Monte Carlo
 
-This branch build a pipeline to do the Gaussian Harmilton Sampling in the learned latent space, which is trained by Grammar VAE.
+This branch is based on the Grammar-VAE paper available [here](https://arxiv.org/abs/1703.01925) and based on the implementation work of Tim Schneider available [here](https://github.com/TimPhillip/ac_grammar_vae).
 
+This implementation builds a pipeline to perform Gaussian Hamiltonian Monte Carlo (GHMC) sampling in the learned latent space of a Grammar VAE, designed for generating valid syntactic structures in a defined language domain.
 
-##Requirements
-Install using pip install -r requirements.txt
+## Requirements
 
-##Creating datasets
-To create the expressions dataset, go to the folder -experiments, run
+Install the necessary Python packages using pip:
+
 ```bash
-Create_dataset.py
+pip install -r requirements.txt
+
 
 To create the observed data points,  go to the folder -experiments, run
 ```bash
