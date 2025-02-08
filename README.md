@@ -11,6 +11,13 @@ Install the necessary Python packages using pip:
 ```bash
 pip install -r requirements.txt
 
+## Create Datase
+
+Expressions Dataset
+To create the expressions dataset, navigate to the experiments folder and run:
+```bash
+python Create_dataset.py
+
 
 To create the observed data points,  go to the folder -experiments, run
 ```bash
