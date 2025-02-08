@@ -8,17 +8,21 @@ Install using pip install -r requirements.txt
 
 ##Creating datasets
 To create the expressions dataset, go to the folder -experiments, run
-'Create_dataset.py'
+```bash
+Create_dataset.py
 
 To create the observed data points,  go to the folder -experiments, run
-'generate_datapoints.py'
+```bash
+generate_datapoints.py
 
 ##Training
 To train the Grammar VAE, go to the folder -experiments, run
-'training.py'
+```bash
+training.py
 
 ##Sampling
 To do the GP-HMC sampling in the learned latent space, go to the folder -experiments, run
-'GPHMC_GVAE.py'
+```bash
+GPHMC_GVAE.py
 
 Beside them, 'visualize_latent_space.py' provides the possibility to visualise 2D latent space. 't-SNE.py' provides the possibility to down dimension and visual the high dimension latent space.
