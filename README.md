@@ -3,22 +3,22 @@ This branch is based on the Grammar-VAE paper https://arxiv.org/abs/1703.01925 a
 This branch build a pipeline to do the Gaussian Harmilton Sampling in the learned latent space, which is trained by Grammar VAE.
 
 
-Requirements
+##Requirements
 Install using pip install -r requirements.txt
 
-Creating datasets
+##Creating datasets
 To create the expressions dataset, go to the folder -experiments, run
-Create_dataset.py
+'Create_dataset.py'
 
 To create the observed data points,  go to the folder -experiments, run
-generate_datapoints.py
+'generate_datapoints.py'
 
-Training
+##Training
 To train the Grammar VAE, go to the folder -experiments, run
-training.py
+'training.py'
 
-Sampling
+##Sampling
 To do the GP-HMC sampling in the learned latent space, go to the folder -experiments, run
-GPHMC_GVAE.py
+'GPHMC_GVAE.py'
 
-Beside them, visualize_latent_space.py provides the possibility to visualise 2D latent space. t-SNE.py provides the possibility to down dimension and visual the high dimension latent space.
+Beside them, 'visualize_latent_space.py' provides the possibility to visualise 2D latent space. 't-SNE.py' provides the possibility to down dimension and visual the high dimension latent space.
