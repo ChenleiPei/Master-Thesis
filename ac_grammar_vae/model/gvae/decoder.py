@@ -18,12 +18,14 @@ class GrammarDecoderNetwork(torch.nn.Module):
                  args=None):
         super(GrammarDecoderNetwork, self).__init__()
 
-        self.max_production_steps = max_of_production_steps
+        #self.max_production_steps = max_of_production_steps
+        self.max_of_production_steps = max_of_production_steps
         self.gru_num_units = gru_num_units
         self.gru_num_layers = gru_num_layers
         self.pre_network = torch.nn.Sequential()
         self.latent_dim = latent_dim
         self.gru_num_units = gru_num_units
+        self.num_grammar_productions = num_grammar_productions
 
         # does it make sense to start with a batch-norm ?!
         self.pre_network.append(torch.nn.BatchNorm1d(num_features=latent_dim))
@@ -43,7 +45,7 @@ class GrammarDecoderNetwork(torch.nn.Module):
 
 
         self.output_network = torch.nn.Sequential(
-            torch.nn.Linear(gru_num_units, num_grammar_productions)
+            torch.nn.Linear(gru_num_units, num_grammar_productions),
         )
 
     def forward(self, z, mask=None):
@@ -60,13 +62,15 @@ class GrammarDecoderNetwork(torch.nn.Module):
         z_transformed = self.pre_network(z)
 
         # duplicate the embedding along the time-axis
-        inputs = torch.unsqueeze(z_transformed, dim=1).expand(-1, self.max_production_steps, -1)
+        inputs = torch.unsqueeze(z_transformed, dim=1).expand(-1, self.max_of_production_steps, -1)
 
         # generate the initial state
         h0 = torch.zeros((self.gru_num_layers, bs, self.gru_num_units))
 
         # apply the GRU
         X, h = self.gru(inputs, h0)
+
+
 
         # time-distributed output layer
         logits = self.output_network(X)

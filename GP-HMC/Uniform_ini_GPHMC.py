@@ -15,7 +15,6 @@ import wandb
 from matplotlib.colors import LinearSegmentedColormap
 import imageio
 import os
-from ac_grammar_vae.model.gvae import GrammarVariationalAutoencoder
 
 
 
@@ -26,11 +25,11 @@ def init_wandb(args):
     current_time = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
     datapoints_name = os.path.splitext(os.path.basename(args.datapoints))[0]
     wandb.init(
-        project=f"GPHMC_Model-GVAE-{datapoints_name}-{args.initial_position}_test",  # Set project name
+        project=f"Thesis_GPHMC_Model-Fitting_mean=actual_withlog_RBF-{datapoints_name}-{args.initial_position}_test",  # Set project name
         name=f"RUN-{current_time}-arg.datapoints",  # Set run name
         config={
             "model": args.model,
-            #"vocab_path": args.vocab_path,
+            "vocab_path": args.vocab_path,
             "datapoints": args.datapoints,
             "max_length": args.max_length,
             "grid_size": args.grid_size,
@@ -57,8 +56,8 @@ class GPModel(gpytorch.models.ExactGP):
         super(GPModel, self).__init__(train_x, train_y, likelihood)
 
         self.mean_module = gpytorch.means.ConstantMean()
-        self.mean_module.constant.data.fill_(0)
-        #self.mean_module.constant = train_y.mean()  # set the mean to the average of the training data
+        #self.mean_module.constant.data.fill_(0)
+        self.mean_module.constant = train_y.mean()  # set the mean to the average of the training data
         #print the mean value
         print(f"Mean value: {self.mean_module.constant}")
         self.covar_module = gpytorch.kernels.ScaleKernel(gpytorch.kernels.RBFKernel())
@@ -193,8 +192,8 @@ def uniform_sampling_and_gp_fitting(args):
 
     # load VAE model and vocab
     VAEmodel = torch.load(args.model)
-    #with open(args.vocab_path, 'r') as f:
-        #vocab = json.load(f)
+    with open(args.vocab_path, 'r') as f:
+        vocab = json.load(f)
 
     max_length = args.max_length
     likelihood_list = []
@@ -204,7 +203,7 @@ def uniform_sampling_and_gp_fitting(args):
 
     # for each grid point, calculate the likelihood
     for z in grid_points_tensor:
-        result = score_function_vae(z, VAEmodel, args)
+        result = score_function_vae(z, VAEmodel, max_length, vocab, args)
         if result is not None:
             likelihood, expression = result
             likelihood_list.append(likelihood)
@@ -234,23 +233,17 @@ def uniform_sampling_and_gp_fitting(args):
     return model, likelihood
 
 # VAE的Score Function
-def score_function_vae(z, model, args):
-    '''logits, index = model.decoder(z.unsqueeze(0), max_length, start_token_idx=vocab['<start>'])
+def score_function_vae(z, model, max_length, vocab, args):
+    logits, index = model.decoder(z.unsqueeze(0), max_length, start_token_idx=vocab['<start>'])
 
     # make sure index is a 2D tensor
     if index.dim() == 1:  # if the index is 1D, unsqueeze to make it 2D
         index = index.unsqueeze(0)
 
-    print(f"Index shape before reconstruct_expression: {index.shape}")'''
+    print(f"Index shape before reconstruct_expression: {index.shape}")
 
     #  reconstruct_expression
-    # expressions = model.reconstruct_expression(index, from_indices=True)
-    print(f"z: {z}")
-    print(f"z shape: {z.shape}")
-
-    expressions = model.sample_decoded_grammar(z)
-    print(f"expressions: {expressions}")
-
+    expressions = model.reconstruct_expression(index, from_indices=True)
 
     # get the first expression
     expression = expressions[0] if len(expressions) > 0 else None
@@ -258,7 +251,7 @@ def score_function_vae(z, model, args):
     if expression:
         print(f"Reconstructed expression: {expression}")
     else:
-        print(f"No valid expression reconstructed from index: ")
+        print(f"No valid expression reconstructed from index: {index}")
 
     try:
         # transform the expression to math expression
@@ -273,22 +266,20 @@ def score_function_vae(z, model, args):
         print(f"Error with latent point {z.tolist()}: {e}")
         return None
 
-def score_func_VAE(z, model):
+def score_func_VAE(z, model, max_length, num_layers):
     # Calculate the score function using a VAE model.
     # first decode the latent position z to get the expression
-    #with open(args.vocab_path, 'r') as f:
-        #vocab = json.load(f)
+    with open(args.vocab_path, 'r') as f:
+        vocab = json.load(f)
     print("z", z)
 
     # Generate expression using the decoder
-    '''logits, index = model.decoder(z, max_length, start_token_idx=vocab['<start>'])
+    logits, index = model.decoder(z, max_length, start_token_idx=vocab['<start>'])
     print("expression_index", index)
 
     # Transfer the index to expression
     expression = model.reconstruct_expression(index, from_indices=True)
-    print(f"Generated expression: {expression}")'''
-
-    expression = model.sample_decoded_grammar(z)
+    print(f"Generated expression: {expression}")
 
     if isinstance(expression, list):
         expression = " ".join(expression)
@@ -300,7 +291,7 @@ def score_func_VAE(z, model):
 
         # Calculate the likelihood of the math expression
         target_func = math_expression
-        points_file = args.datapoints
+        points_file = "datapoints_g4x+2.npy"
         likelihood = calculate_log_likelihood_from_gaussian(points_file, target_func, std=args.std_likelihood)
         print(f"Likelihood: {likelihood}")
 
@@ -663,8 +654,7 @@ def main():
         new_samples = new_samples.view(initial_position_sphase.shape)
 
         # the score function for VAE
-        #result = score_func_VAE(new_samples, VAEmodel, max_length, num_layers)
-        result = score_func_VAE(new_samples, VAEmodel)
+        result = score_func_VAE(new_samples, VAEmodel, max_length, num_layers)
         if result is not None:
             valid_result_count += 1
             Z_score_new, expression = result
@@ -714,20 +704,18 @@ def main():
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    #parser.add_argument("--model", type=str, default="LSTMVAE_bin/2024-Dec-04-19-08-42/model_final.pth") #for 5 expressions
-    parser.add_argument("--model", type=str,
-                        default='results/gvae_pretrained_parametric_2025-Jan-08-20-15-26.pth')  # for GVAE
-    #parser.add_argument('--vocab_path', type=str, default='./LSTMVAE_bin/2024-Dec-04-19-08-42/vocab.json') #for 5 expressions
+    parser.add_argument("--model", type=str, default="LSTMVAE_bin/2024-Dec-04-19-08-42/model_final.pth") #for 5 expressions
+    parser.add_argument('--vocab_path', type=str, default='./LSTMVAE_bin/2024-Dec-04-19-08-42/vocab.json') #for 5 expressions
 
     #parser.add_argument("--model", type=str, default="model_final.pth")
     #parser.add_argument('--vocab_path', type=str, default='vocab.json')
     parser.add_argument("--datapoints", type=str, default="datapoints_g4x+2.npy")
 
-    parser.add_argument("--max_length", type=int, default=64)
+    parser.add_argument("--max_length", type=int, default=37)
     parser.add_argument("--grid_size", type=int, default=30, help="Number of points per axis for uniform sampling")
     parser.add_argument("--grid_size_show", type=int, default=200, help="Number of points per axis for visualization")
     parser.add_argument("--dimension", type=int, default=2)
-    parser.add_argument("--lengthscale", type=float, default=1.5)
+    parser.add_argument("--lengthscale", type=float, default=0.5)
     parser.add_argument("--outputscale", type=float, default=5.0)
     parser.add_argument("--std_likelihood", type=float, default=1, help="likelihood standard deviation for calculating log likelihood")
     parser.add_argument("--noise", type=float, default=0.1)
@@ -736,8 +724,8 @@ if __name__ == "__main__":
     parser.add_argument("--num_layers", type=int, default=2)
     parser.add_argument("--iterations of gp training", type=int, default=1000)
     parser.add_argument("--number_of_test_points", type=int, default=50)
-    parser.add_argument("--iterations_sampling", type=int, default=20)
-    parser.add_argument("--initial_position", type=float, default=[[0, 0]])
+    parser.add_argument("--iterations_sampling", type=int, default=1000)
+    parser.add_argument("--initial_position", type=float, default=[[5, 8]])
     parser.add_argument("--steps", type=int, default=100)
     parser.add_argument("--step_size", type=float, default=0.015)
     parser.add_argument("--num_samples", type=int, default=1)

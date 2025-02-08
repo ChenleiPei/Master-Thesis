@@ -183,12 +183,20 @@ def save_latent_space(model, data_loader, output_file, cfg_embedding):
 
 
 
-def main():
+def main(latent_dim, gru_num_layers):
 
     ts = datetime.now().strftime("%Y-%b-%d-%H-%M-%S")
     wandb.login(key="1a52f6079ddb0d4c0e9f5869d9cc0bdd3f5d9a01")
-    wandb.init(project="gvae_pretrained", name=f"gvae_pretrained_{ts}")
+    wandb.init(project="gvae_pretrained", name=f"gvae_pretrained_{ts}_{latent_dim}_{gru_num_layers}")
     print("W&B initialized:", wandb.run.id)
+
+    #record every hyperparameter in wandb
+    wandb.config.latent_dim = latent_dim
+    wandb.config.gru_num_layers = gru_num_layers
+
+    #record all args in wandb
+    #wandb.config.update(args)
+    wandb.config.update(args, allow_val_change=True)
 
     #initialize wandb
 
@@ -231,8 +239,10 @@ def main():
         len(training.pcfg.productions()) + 1,
         training.max_grammar_productions,
         #max_of_production_steps = 128,
-        latent_dim=args.latent_dim,
-        gru_num_layers=args.gru_num_layers,
+        #latent_dim=args.latent_dim,
+        latent_dim=latent_dim,
+        #gru_num_layers=args.gru_num_layers,
+        gru_num_layers=gru_num_layers,
         gru_num_units=args.gru_num_units,
         rule_embedding=embedding,
         expressions_with_parameters=expression_with_parameters,
@@ -354,26 +364,36 @@ def main():
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     #set the number of epochs
-    parser.add_argument('--num_epochs', type=int, default=200, help="Number of training epochs")
+    parser.add_argument('--num_epochs', type=int, default=150, help="Number of training epochs")
     #set the early stopping patience
     parser.add_argument('--early_stopping_patience', type=int, default=200, help="Number of epochs to wait for improvement before stopping")
     #set batch size and validation batch size
-    parser.add_argument('--batch_size', type=int, default=128, help="Batch size for training")
-    parser.add_argument('--val_batch_size', type=int, default=128, help="Batch size for validation")
+    parser.add_argument('--batch_size', type=int, default=256, help="Batch size for training")
+    parser.add_argument('--val_batch_size', type=int, default=256, help="Batch size for validation")
     #set validation samples
     parser.add_argument('--validation_samples', type=int, default=1000, help="Number of validation")
     #set the latent dimension
-    parser.add_argument('--latent_dim', type=int, default=6, help="Latent dimension of the model")
+    parser.add_argument('--latent_dim', type=int, default=2, help="Latent dimension of the model")
     #set the number of GRU layers in decoder
-    parser.add_argument('--gru_num_layers', type=int, default=5, help="Number of GRU layers in the decoder")
-    parser.add_argument('--gru_num_units', type=int, default=256, help="Number of GRU units in each layer")
+    parser.add_argument('--gru_num_layers', type=int, default=2, help="Number of GRU layers in the decoder")
+    parser.add_argument('--gru_num_units', type=int, default=512, help="Number of GRU units in each layer")
     parser.add_argument('--data_file', type=str, default='equations_5.txt',)
     #parse the maximum number of production steps
-    parser.add_argument('--max_of_production_steps', type=int, default=128)
+    parser.add_argument('--max_of_production_steps', type=int, default=64)
 
 
     args = parser.parse_args()
+    # grid search
+    latent_dims = [2, 4, 8, 16, 32]
+    gru_layers = [3, 5, 8]
+
+
+    for latent_dim in latent_dims:
+        for gru_num_layer in gru_layers:
+            main(latent_dim, gru_num_layer)
+    #print the hyperparameters latent dim and gru layers
+    print(f"Latent Dimension: {latent_dim}, GRU Layers: {gru_num_layer}")
 
     #use wandb to record all args
 
-    main()
+    main(latent_dim, gru_num_layer)

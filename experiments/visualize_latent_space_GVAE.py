@@ -88,7 +88,7 @@ else:
 
 
 # Replace 'path_to_your_file.npz' with the actual path to your .npz file
-load_and_plot_latent_space_with_label('results/latent_space_parametric_2025-Jan-08-20-15-26_klloss=0.001_dense=512.npz')
+load_and_plot_latent_space_with_label('results/latent_space_parametric_3.npz')
 
 
 def count_unique_labels(file_path):
@@ -108,4 +108,4 @@ def count_unique_labels(file_path):
 
 
 # 替换 'results/latent_space_parametric_3.npz' 为你的实际文件路径
-unique_labels = count_unique_labels('results/latent_space_parametric_2025-Jan-08-20-15-26_klloss=0.001_dense=512.npz')
+unique_labels = count_unique_labels('results/latent_space_parametric_3.npz')

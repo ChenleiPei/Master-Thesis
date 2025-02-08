@@ -235,8 +235,9 @@ class GrammarVariationalAutoencoder(torch.nn.Module):
                 # check whether there are production steps left
                 #print("n_steps: ", n_steps)
                 #print("max_of_production_steps: ", self.max_of_production_steps)
-                if n_steps >= self.max_of_production_steps :
-                    print("max_of_production_steps: ", self.max_of_production_steps)
+                #if n_steps >= self.max_of_production_steps :
+                if n_steps >= self.max_of_production_steps:
+                    print("max_of_production_steps 64: ", self.max_of_production_steps)
                     #raise Exception("OutOfLogitsException: too many production are required to generate a valid string from the given set of logits.")
                     print("Warning: Reached maximum number of production steps.")
                     break
@@ -247,7 +248,9 @@ class GrammarVariationalAutoencoder(torch.nn.Module):
                 mask = torch.as_tensor(self._decoder_masks[self._non_terminal_idx[nt]], dtype=torch.bool)
 
                 # sample production from masked softmax
+                print("size of logits: ", logits.size())
                 current_logits = torch.masked_fill(logits[:, n_steps, :], mask=~mask, value=float("-inf"))
+
                 print("current_logits: ", current_logits)
                 prod_emb = torch.multinomial(torch.softmax(current_logits, dim=-1), num_samples=1)
                 #if prod_emb.item() >= len(self._embedding_decoder):
