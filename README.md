@@ -80,3 +80,12 @@ and
 t-SNE.py
 ```
 for the visualization of the high dimensional latent space.
+
+## Other methods
+The implementation of other methods are 
+```bash
+Genetic Program.py
+```
+```bash
+SinDy.py
+```
