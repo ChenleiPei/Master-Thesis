@@ -2,6 +2,8 @@
 
 ## Bayesian Reasoning in the learn structure latent space, with Character Variational Autoencoder and Gaussian Hamiltonian Monte Carlo sampling
 
+This branch, the master branch, is the main method that we used for the thesis.
+
 This branch is based on the Character-VAE paper available  and based on the implementation work of available .
 
 This implementation builds a pipeline to perform Gaussian Hamiltonian Monte Carlo (GHMC) sampling in the learned latent space of a Character VAE while applying Bayesian Reasoning in the latent space.
