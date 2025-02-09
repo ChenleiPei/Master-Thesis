@@ -3,6 +3,10 @@
 ## Bayesian Reasoning in the learn structure latent space, with Character Variational Autoencoder and Gaussian Hamiltonian Monte Carlo sampling
 
 This branch, the master branch, is the main method that we used for the thesis.
+Beside this branch, we have three other branches:
+Toy-Projects-of-GPHMC-and-VAE for another pipeline which shows the first try of building the separate methods;
+Character VAE-with-GPHMC which is using the same method as this master branch. It has the better performance for this problem;
+GVAE-with-GPHMC which is using Grammar VAE instead of Character VAE.
 
 This branch is based on the Character-VAE paper available  and based on the implementation work of available .
 
