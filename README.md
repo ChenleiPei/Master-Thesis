@@ -52,6 +52,17 @@ python Real_test_GPHMC.py
 ```
 for the test part in the experiment in the thesis.
 
+## Prior knowledge
+To transfer the prior knowledge to the latent space, first run (with a trained VAE)
+```bash
+prior knowledge to latent space.py
+```
+to get the parameters for the latent space, then run
+```bash
+Prior_latent.py or GMM_with_prior.py
+```
+to visualise the prior in the latent space
+
 ## Visualization
 Besides the above steps, `visualize_latent_space.py` provides the capability to visualize the latent space representation. You can run:
 
