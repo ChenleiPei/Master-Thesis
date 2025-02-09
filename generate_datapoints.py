@@ -51,7 +51,7 @@ def generate_and_save_gaussian_points(target_func, x_range, n_points=30, noise=1
     plt.xlabel("x")
     plt.ylabel("y")
     plt.legend()
-    plt.title("Independent Gaussian Points Around Target Function")
+    plt.title("Independent Gaussian Points Around Target Function - Data points dataset")
     plt.show()
 
 # Example usage:
@@ -59,8 +59,8 @@ if __name__ == "__main__":
     def target_function(x):
         return np.sqrt(x)   # Example target function
 
-    x_range = (0, 5)
+    x_range = (0.1, 5)
     n_points = 30
-    filename = "Nguyen_8"
-    generate_and_save_gaussian_points(target_function, x_range, n_points=n_points, noise=1000, filename=filename)
+    filename = "Nguyen_8_version_2"
+    generate_and_save_gaussian_points(target_function, x_range, n_points=n_points, noise=0.3, filename=filename)
 

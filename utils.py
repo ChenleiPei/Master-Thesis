@@ -2,6 +2,8 @@ import torch
 import numpy as np
 from torch.autograd import Variable
 from collections import defaultdict, Counter, OrderedDict
+from sympy import symbols, S
+from sympy.calculus.util import continuous_domain
 
 
 class OrderedCounter(Counter, OrderedDict):
@@ -106,13 +108,12 @@ def convert_expression(expression_str):
         print("Error: The expression could not be parsed.")
         return None
 
-convert_expression("<start> sqrt(x)")
 
 
 import numpy as np
 from sympy import symbols, sympify
 
-def evaluate_expression(sympy_expr, x_range=None):
+'''def evaluate_expression(sympy_expr, x_range=None):
     """
     Evaluate a SymPy expression for a given range of x values or a single x value.
     """
@@ -136,6 +137,47 @@ def evaluate_expression(sympy_expr, x_range=None):
             result = sympy_expr.subs(x, x_range).evalf()
             print(f"Evaluated value (x={x_range}): {result}")
             return result
+
+        else:
+            print("Error: Invalid x_range input. It must be a number or a tuple (start, stop, step).")
+            return None
+
+    except Exception as e:
+        print(f"Error during evaluation: {e}")
+        return None'''
+
+def evaluate_expression(sympy_expr, x_range=None):
+    """
+    Evaluate a SymPy expression for a given range of x values or a single x value,
+    automatically considering the domain of the expression.
+    """
+    x = symbols('x')
+
+    if sympy_expr is None:
+        print("Error: Invalid SymPy expression.")
+        return None
+
+    # Get the domain of the expression
+    domain = continuous_domain(sympy_expr, x, S.Reals)
+
+    try:
+        # Evaluate for a range of x values
+        if isinstance(x_range, (list, tuple)) and len(x_range) == 3:
+            start, stop, step = x_range
+            x_values = np.arange(start, stop, step)  # Use NumPy to create range
+            results = [sympy_expr.subs(x, value).evalf() if value in domain else None for value in x_values]
+            print(f"Evaluated values for range {x_range}: {results}")
+            return results
+
+        # Evaluate for a single x value
+        elif isinstance(x_range, (int, float)):
+            if x_range in domain:
+                result = sympy_expr.subs(x, x_range).evalf()
+                print(f"Evaluated value (x={x_range}): {result}")
+                return result
+            else:
+                print(f"Value {x_range} is outside of the domain: {domain}")
+                return None
 
         else:
             print("Error: Invalid x_range input. It must be a number or a tuple (start, stop, step).")

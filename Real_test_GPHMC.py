@@ -39,8 +39,8 @@ def init_wandb(args):
             "outputscale": args.outputscale,
             "std_likelihood": args.std_likelihood,
             "noise": args.noise,
-            "boundsx": args.boundsx,
-            "boundsy": args.boundsy,
+            "bounds1": args.bounds1,
+            "bounds2": args.bounds2,
             "interations in exploration phase": args.iterations_sampling,
             "steps in sampling phase": args.steps,
             "step_size": args.step_size,
@@ -151,6 +151,8 @@ def hmc_sample(initial_position, energy_function, steps, step_size, num_samples,
 
             lower_bounds = bounds[:,0].unsqueeze(0)
             upper_bounds = bounds[:,1].unsqueeze(0)
+            #print("lower_bounds", lower_bounds)
+            #print("upper_bounds", upper_bounds)
 
             position = torch.max(torch.min(position, upper_bounds), lower_bounds)
             # constrain the position to be within the bounds
@@ -192,7 +194,7 @@ def uniform_sampling_and_gp_fitting(args):
 
 
     # generate grid points
-    linear_space = np.linspace(args.boundsx[0],args.boundsx[1], args.grid_size)
+    linear_space = np.linspace(args.bounds1[0],args.bounds1[1], args.grid_size)
 
     mesh = np.meshgrid(*([linear_space] * args.dimension), indexing='ij')
 
@@ -240,7 +242,7 @@ def uniform_sampling_and_gp_fitting(args):
         model, likelihood = None, None
 
     # visualize the GP model fit
-    visualize_gp_model_ini(model, grid_points, valid_points, failed_points, expressions, likelihood_tensor)
+    #visualize_gp_model_ini(model, grid_points, valid_points, failed_points, expressions, likelihood_tensor)
 
     return model, likelihood
 
@@ -272,7 +274,7 @@ def score_function_vae(z, model, max_length, vocab, args):
 
         # calculate the likelihood
         # get the datapoints file from args
-        points_file =  args.datapoints
+        points_file = args.datapoints
         likelihood = calculate_log_likelihood_from_gaussian(points_file, math_expression, std=args.std_likelihood)
         return likelihood, expression
     except Exception as e:
@@ -304,7 +306,7 @@ def score_func_VAE(z, model, max_length, num_layers):
 
         # Calculate the likelihood of the math expression
         target_func = math_expression
-        points_file = "datapoints_g4x+2.npy"
+        points_file = args.datapoints
         likelihood = calculate_log_likelihood_from_gaussian(points_file, target_func, std=args.std_likelihood)
         print(f"Likelihood: {likelihood}")
 
@@ -616,7 +618,7 @@ def main():
     iterations_sampling = args.iterations_sampling
     step_size = torch.full((dimension,), args.step_size, dtype=torch.float32)
     num_samples = args.num_samples
-    bounds = torch.tensor([args.boundsx, args.boundsy], dtype=torch.float32)
+    bounds = torch.tensor([args.bounds1, args.bounds2, args.bounds3, args.bounds4], dtype=torch.float32)
     initial_position = torch.tensor(args.initial_position, dtype=torch.float32)
 
     # initialize the model and likelihood using uniform_sampling_and_gp_fitting
@@ -699,20 +701,22 @@ if __name__ == "__main__":
     parser.add_argument("--datapoints", type=str, default="Nguyen_5_train.npy")
 
     parser.add_argument("--max_length", type=int, default=37)
-    parser.add_argument("--grid_size", type=int, default=20, help="Number of points per axis for uniform sampling")
+    parser.add_argument("--grid_size", type=int, default=5, help="Number of points per axis for uniform sampling")
     parser.add_argument("--grid_size_show", type=int, default=10, help="Number of points per axis for visualization")
     parser.add_argument("--dimension", type=int, default=4)
     parser.add_argument("--lengthscale", type=float, default=3.0)
     parser.add_argument("--outputscale", type=float, default=3.0)
     parser.add_argument("--std_likelihood", type=float, default=1, help="likelihood standard deviation for calculating log likelihood")
     parser.add_argument("--noise", type=float, default=0.1)
-    parser.add_argument("--boundsx", type=list, default=[-5, 5])
-    parser.add_argument("--boundsy", type=list, default=[-5, 5])
+    parser.add_argument("--bounds1", type=list, default=[-5, 5])
+    parser.add_argument("--bounds2", type=list, default=[-5, 5])
+    parser.add_argument("--bounds3", type=list, default=[-5, 5])
+    parser.add_argument("--bounds4", type=list, default=[-5, 5])
     parser.add_argument("--num_layers", type=int, default=3)
     parser.add_argument("--iterations of gp training", type=int, default=1000)
     parser.add_argument("--number_of_test_points", type=int, default=50)
     parser.add_argument("--iterations_sampling", type=int, default=1000)
-    parser.add_argument("--initial_position", type=float, default=[[0, 0]])
+    parser.add_argument("--initial_position", type=float, default=[[0, 0, 0, 0]])
     parser.add_argument("--steps", type=int, default=100)
     parser.add_argument("--step_size", type=float, default=0.015)
     parser.add_argument("--num_samples", type=int, default=1)
