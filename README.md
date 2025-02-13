@@ -2,6 +2,8 @@
 
 This branch is based on the Grammar-VAE paper available [here](https://arxiv.org/abs/1703.01925) and based on the implementation work of Tim Schneider available [here](https://github.com/TimPhillip/ac_grammar_vae).
 
+The datasets (expressions datasets and data points datasets) are the same as the master branch. You can go to the master branch and find them in the folder "data".
+
 This implementation builds a pipeline to perform Gaussian Hamiltonian Monte Carlo (GHMC) sampling in the learned latent space of a Grammar VAE, designed for generating valid syntactic structures in a defined language domain.
 
 ## Requirements
