@@ -3,15 +3,15 @@
 ## Bayesian Reasoning in the learn structure latent space, with Character Variational Autoencoder and Gaussian Hamiltonian Monte Carlo sampling
 
 This branch, the master branch, is the main method that we used for the thesis.
-Beside this branch, we have three other branches:
-Toy-Projects-of-GPHMC-and-VAE for another pipeline which shows the first try of building the separate methods;
-Character VAE-with-GPHMC which is using the same method as this master branch. It has the better performance for this problem;
-GVAE-with-GPHMC which is using Grammar VAE instead of Character VAE.
+Besides this branch, we have three other branches:
+Toy-Projects-of-GPHMC-and-VAE for another pipeline, which shows the first try of building the separate methods;
+Character VAE-with-GPHM,C which is using the same method as this master branch. It has a better performance for this problem;
+GVAE-with-GPHMC, which uses Grammar VAE instead of Character VAE.
 
-This branch is based on the Character-VAE paper available  and based on the implementation work of available .
 
 This implementation builds a pipeline to perform Gaussian Hamiltonian Monte Carlo (GHMC) sampling in the learned latent space of a Character VAE while applying Bayesian Reasoning in the latent space.
-
+The expressions datasets and data points datasets are in the folder "data."
+Some of the pre-trained models are in the LSTMVAE_bin folder, including the model itself, vocabulary, and latent space files.
 
 ## Requirements
 
@@ -52,7 +52,7 @@ To perform GP-HMC sampling in the learned latent space, run:
 ```bash
 python Uniform_ini_GPHMC.py
 ```
-and
+or
 ```bash
 python Real_test_GPHMC.py
 ```
@@ -88,4 +88,19 @@ Genetic Program.py
 ```
 ```bash
 SinDy.py
+```
+
+## Other files
+During this thesis project, the other files are also generated:
+To improve our method with constant estimation:
+```bash
+constant estimation.py
+```
+Autoencoder method is also be tried at the beginning:
+```bash
+LSTM_AE_Training.py
+```
+To show the generate distrition in the latent space:
+```bash
+Uniform_ini_GPHMC.py
 ```
